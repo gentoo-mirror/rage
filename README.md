@@ -34,4 +34,5 @@ After performing those steps, the following should work (or any other package fr
 - [Gentoo Overlays](https://overlays.gentoo.org/)
 - [Gentoo Wiki: Custom Tree](https://wiki.gentoo.org/wiki/Handbook:AMD64/Portage/CustomTree)
 - [Gentoo Wiki: Custom Repository](https://wiki.gentoo.org/wiki/Custom_repository)
-- I also used stefan langenmaier's [brother-overlay](https://github.com/stefan-langenmaier/brother-overlay/) for reference.
+- [Gentoo Wiki: Writing Ebuilds](https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds)
+- [stefan langenmaier's brother-overlay](https://github.com/stefan-langenmaier/brother-overlay/)
