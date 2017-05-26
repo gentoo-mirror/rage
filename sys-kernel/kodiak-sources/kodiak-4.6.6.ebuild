@@ -10,3 +10,5 @@ SRC_URI="https://fire-phone-src.s3.amazonaws.com/z6qIQG7tiQp8PcgZIwJmmkxgNj/fire
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~arm"
+
+# EPREFIX/usr/src
