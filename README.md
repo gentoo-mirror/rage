@@ -3,7 +3,7 @@
 ## with local overlays
 
 [Local overlays](https://wiki.gentoo.org/wiki/Custom_repository) should be managed via `/etc/portage/repos.conf/`.
-To enable this overlay make sure you are using a recent Portage version (at least `2.2.14`), and create a `/etc/portage/repos.conf/brother-overlay.conf` file containing precisely:
+To enable this overlay make sure you are using a recent Portage version (at least `2.2.14`), and create a `/etc/portage/repos.conf/rage-overlay.conf` file containing precisely:
 
 ```
 [rage-overlay]
