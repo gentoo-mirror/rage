@@ -8,23 +8,26 @@ inherit kernel-2
 detect_version
 detect_arch
 
-MY_P="fire-phone_src_${PV}"
-
 DESCRIPTION="Amazon Fire Phone Kernel Sources"
 HOMEPAGE="https://www.amazon.com/gp/help/customer/display.html/ref=hp_bc_nav?ie=UTF8&nodeId=201399100"
+
+MY_P="fire-phone_src_${PV}"
 SRC_URI="https://fire-phone-src.s3.amazonaws.com/z6qIQG7tiQp8PcgZIwJmmkxgNj/${MY_P}.tar.bz2"
+S="${WORKDIR}/kernel/qcom/3.4/"
 
 SLOT="0"
 KEYWORDS="~arm "
 
 src_unpack() {
 	unpack ${MY_P}.tar.bz2
-	unpack platform.tar
-	# kernel/qcom/3.4
+	unpack "${WORKDIR}/platform.tar"
 }
 
-src_install() {
-	install_sources
+install_sources() {
+	cd "${S}"
+	dodir /usr/src
+	echo ">>> Copying sources..."
+	mv "../3.4/" "${ED}"/usr/src/"${P}" || die
 }
 
 pkg_postinst() {
