@@ -7,7 +7,7 @@ inherit savedconfig toolchain-funcs
 
 DESCRIPTION="eXtended Window Manager is based on dwm-plus, a fork of dwm."
 HOMEPAGE="http://github.com/lramage94/xwm"
-EGIT_REPO_URI="git://github.com/lramage94/xwm"
+EGIT_REPO_URI="git://github.com/lramage94/xwm.git"
 
 LICENSE="MIT"
 SLOT="0"
