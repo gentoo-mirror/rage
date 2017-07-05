@@ -4,7 +4,7 @@
 EAPI=6
 
 DESCRIPTION=""
-HOMEPAGE="http://github.org/lramage94/pyobd"
+HOMEPAGE="http://www.obdtester.com/pyobd"
 
 LICENSE="GPL-2"
 SLOT="0"
