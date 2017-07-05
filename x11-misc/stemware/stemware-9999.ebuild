@@ -3,8 +3,6 @@
 
 EAPI=6
 
-inherit savedconfig toolchain-funcs
-
 DESCRIPTION="remote control for your desktop"
 HOMEPAGE="http://github.org/lramage94/stemware"
 
