@@ -17,6 +17,7 @@ S="${WORKDIR}/kernel/qcom/3.4/"
 
 SLOT="0"
 KEYWORDS="~arm "
+#IUSE="kexec otg"
 
 src_unpack() {
 	unpack ${MY_P}.tar.bz2
