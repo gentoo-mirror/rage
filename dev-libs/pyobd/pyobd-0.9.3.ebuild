@@ -5,8 +5,10 @@ EAPI=6
 
 DESCRIPTION="OBD-II compliant car diagnostic tool."
 HOMEPAGE="http://www.obdtester.com/pyobd"
-
 LICENSE="GPL-2"
+
+SRC_URI="http://www.obdtester.com/download/pyobd_0.9.3.tar.gz"
+
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
@@ -14,3 +16,5 @@ IUSE=""
 DEPEND=""
 
 RDEPEND="${DEPEND}"
+
+
