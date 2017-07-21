@@ -1,7 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=2
+EAPI=6
+
 inherit eutils multilib toolchain-funcs
 
 DESCRIPTION="A general purpose library for ACPI"
@@ -24,5 +25,4 @@ src_compile() {
 
 src_install() {
 	emake DESTDIR="${D}" LIBDIR="/usr/$(get_libdir)" install || die
-	prepalldocs
 }

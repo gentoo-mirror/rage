@@ -8,7 +8,7 @@ HOMEPAGE="http://github.org/lramage94/stemware"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=""
