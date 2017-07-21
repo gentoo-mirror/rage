@@ -10,6 +10,7 @@ detect_arch
 
 DESCRIPTION="Amazon Fire Phone Kernel Sources"
 HOMEPAGE="https://www.amazon.com/gp/help/customer/display.html/ref=hp_bc_nav?ie=UTF8&nodeId=201399100"
+LICENSE="GPL-2"
 
 MY_P="fire-phone_src_${PV}"
 SRC_URI="https://fire-phone-src.s3.amazonaws.com/z6qIQG7tiQp8PcgZIwJmmkxgNj/${MY_P}.tar.bz2"
