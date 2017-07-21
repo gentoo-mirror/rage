@@ -3,12 +3,12 @@
 
 EAPI=6
 
-DESCRIPTION=""
+DESCRIPTION="OBD-II compliant car diagnostic tool."
 HOMEPAGE="http://www.obdtester.com/pyobd"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=""
