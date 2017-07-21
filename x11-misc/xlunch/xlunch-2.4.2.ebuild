@@ -9,3 +9,5 @@ HOMEPAGE="http://xlunch.org/"
 LICENSE="GPL-3"
 
 SRC_URI="https://github.com/Tomas-M/xlunch/archive/v${PV}.tar.gz"
+KEYWORDS="~amd64 ~x86"
+SLOT="0"
