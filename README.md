@@ -1,4 +1,5 @@
 # gentoo-overlay
+This is my personal overlay used for development and therefore is UNSTABLE. Use at your own risk.
 
 ## with local overlays
 
