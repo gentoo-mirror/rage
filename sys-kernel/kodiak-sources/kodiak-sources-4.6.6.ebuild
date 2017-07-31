@@ -17,12 +17,19 @@ SRC_URI="https://fire-phone-src.s3.amazonaws.com/z6qIQG7tiQp8PcgZIwJmmkxgNj/${MY
 S="${WORKDIR}/kernel/qcom/3.4/"
 
 SLOT="0"
-KEYWORDS="~arm "
-#IUSE="kexec otg"
+KEYWORDS="~arm"
+IUSE="binary otg kexec"
+
+DEPEND="binary? ( >=sys-kernel/genkernel )"
+RDEPEND="kexec? ( >=sys-apps/kexec-tools )"
 
 src_unpack() {
 	unpack ${MY_P}.tar.bz2
 	unpack "${WORKDIR}/platform.tar"
+}
+
+src_compile() {
+	! use binary && return
 }
 
 install_sources() {
