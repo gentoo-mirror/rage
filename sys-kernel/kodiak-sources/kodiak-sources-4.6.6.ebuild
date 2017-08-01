@@ -20,8 +20,8 @@ SLOT="0"
 KEYWORDS="~arm"
 IUSE="binary otg kexec"
 
-DEPEND="binary? ( >=sys-kernel/genkernel )"
-RDEPEND="kexec? ( >=sys-apps/kexec-tools )"
+DEPEND="binary? ( sys-kernel/genkernel )"
+RDEPEND="kexec? ( sys-apps/kexec-tools )"
 
 src_unpack() {
 	unpack ${MY_P}.tar.bz2
@@ -30,6 +30,9 @@ src_unpack() {
 
 src_compile() {
 	! use binary && return
+
+	ARCH=arm
+	CROSS_COMPILE=arm-linux-gnueabihf-
 }
 
 install_sources() {
