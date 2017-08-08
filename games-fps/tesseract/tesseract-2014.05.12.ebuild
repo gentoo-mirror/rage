@@ -20,3 +20,5 @@ IUSE="sdl"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
+
+# https://gitweb.gentoo.org/repo/gentoo.git/tree/games-fps/sauerbraten/sauerbraten-2013.02.03.ebuild
