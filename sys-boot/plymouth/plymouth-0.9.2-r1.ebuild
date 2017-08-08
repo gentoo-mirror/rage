@@ -1,18 +1,20 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=5
 
-SRC_URI="https://dev.gentoo.org/~aidecoe/distfiles/${CATEGORY}/${PN}/gentoo-logo.png"
+SRC_URI="
+	https://dev.gentoo.org/~aidecoe/distfiles/${CATEGORY}/${PN}/gentoo-logo.png"
 
+AUTOTOOLS_AUTORECONF="1"
 if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="git://anongit.freedesktop.org/plymouth"
 	inherit git-r3
 else
-	SRC_URI="${SRC_URI} https://www.freedesktop.org/software/plymouth/releases/${P}.tar.xz"
+	SRC_URI="${SRC_URI} https://www.freedesktop.org/software/plymouth/releases/${P}.tar.bz2"
 fi
 
-inherit autotools readme.gentoo-r1 systemd toolchain-funcs
+inherit autotools-utils readme.gentoo systemd toolchain-funcs
 
 DESCRIPTION="Graphical boot animation (splash) and logger"
 HOMEPAGE="https://cgit.freedesktop.org/plymouth/"
@@ -20,7 +22,7 @@ HOMEPAGE="https://cgit.freedesktop.org/plymouth/"
 LICENSE="GPL-2"
 SLOT="0"
 [[ ${PV} == 9999 ]] || \
-KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="alpha amd64 arm ia64 ppc ppc64 sparc x86"
 IUSE="debug gdm +gtk +libkms +pango static-libs"
 
 CDEPEND="
@@ -47,28 +49,31 @@ DOC_CONTENTS="
 "
 
 PATCHES=(
+	"${FILESDIR}/0.9.2-systemdsystemunitdir.patch"
 )
 
+src_prepare() {
+	autotools-utils_src_prepare
+}
+
 src_configure() {
-	local myconf
-	myconf="--with-system-root-install=no
-	--localstatedir=/var
-	--without-rhgb-compat-link
-	--enable-systemd-integration
-	--with-systemdunitdir="$(systemd_get_systemunitdir)"
-	$(use_enable !static-libs shared)
-	$(use_enable static-libs static)
-	$(use_enable debug tracing)
-	$(use_enable gtk gtk)
-	$(use_enable libkms drm)
-	$(use_enable pango)
-	$(use_enable gdm gdm-transition)"
-	eautoreconf
-	econf ${myconf}
+	local myeconfargs=(
+		--with-system-root-install=no
+		--localstatedir=/var
+		--without-rhgb-compat-link
+		--enable-systemd-integration
+		"$(systemd_with_unitdir)"
+		$(use_enable debug tracing)
+		$(use_enable gtk gtk)
+		$(use_enable libkms drm)
+		$(use_enable pango)
+		$(use_enable gdm gdm-transition)
+		)
+	autotools-utils_src_configure
 }
 
 src_install() {
-	default
+	autotools-utils_src_install
 
 	insinto /usr/share/plymouth
 	newins "${DISTDIR}"/gentoo-logo.png bizcom.png
