@@ -18,7 +18,11 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="sdl"
 
-DEPEND=""
+DEPEND="
+       media-libs/sdl2-image
+       media-libs/sdl2-mixer
+"
 RDEPEND="${DEPEND}"
 
 # https://gitweb.gentoo.org/repo/gentoo.git/tree/games-fps/sauerbraten/sauerbraten-2013.02.03.ebuild
+# https://websvn.tuxfamily.org/filedetails.php?repname=tesseract%2Fmain&path=%2Fsrc%2FMakefile
