@@ -19,8 +19,14 @@ KEYWORDS="~amd64 ~x86"
 IUSE="sdl"
 
 DEPEND="
+       net-libs/enet
+       sys-libs/zlib
+       media-libs/libsdl2
        media-libs/sdl2-image
        media-libs/sdl2-mixer
+       virtual/glu
+       virtual/opengl
+       x11-libs/libX11
 "
 RDEPEND="${DEPEND}"
 
