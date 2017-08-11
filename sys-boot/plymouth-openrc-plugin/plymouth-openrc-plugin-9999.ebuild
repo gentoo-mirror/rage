@@ -6,15 +6,15 @@ EAPI=6
 inherit multilib
 
 DESCRIPTION="Plymouth plugin for OpenRC"
-HOMEPAGE="https://github.com/aidecoe/plymouth-openrc-plugin"
+HOMEPAGE="https://github.com/lramage94/plymouth-openrc-plugin"
 SRC_URI="https://dev.gentoo.org/~aidecoe/distfiles/${CATEGORY}/${PN}/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE=""
-DEPEND=">=sys-apps/openrc-0.8.2-r1"
+DEPEND="sys-apps/openrc"
 RDEPEND="${DEPEND}
-		>=sys-boot/plymouth-0.8.3-r5"
+		=sys-boot/plymouth"
 
 src_install() {
 	insinto /$(get_libdir)/rc/plugins
