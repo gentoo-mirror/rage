@@ -8,6 +8,7 @@ inherit eutils versionator
 MY_PR="first_edition"
 MY_PV=$(replace_all_version_separators '_')
 MY_P="${PN}_${MY_PV}_${MY_PR}"
+S="${WORKDIR}/${PN}"
 
 DESCRIPTION="a fork of Cube 2: Sauerbraten with upgraded modern rendering techniques."
 HOMEPAGE="http://tesseract.gg/"
@@ -30,5 +31,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-# https://gitweb.gentoo.org/repo/gentoo.git/tree/games-fps/sauerbraten/sauerbraten-2013.02.03.ebuild
-# https://websvn.tuxfamily.org/filedetails.php?repname=tesseract%2Fmain&path=%2Fsrc%2FMakefile
+src_compile() {
+	cd ${S}/src
+	emake || die "Make failed!"
+}
