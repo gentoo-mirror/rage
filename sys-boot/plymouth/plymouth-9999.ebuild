@@ -21,7 +21,7 @@ LICENSE="GPL-2"
 SLOT="0"
 [[ ${PV} == 9999 ]] || \
 KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc ~x86"
-IUSE="debug gdm +gtk +libkms +pango static-libs"
+IUSE="debug gdm +gtk +libkms +pango static-libs systemd"
 
 CDEPEND="
 	>=media-libs/libpng-1.2.16:=
@@ -54,8 +54,8 @@ src_configure() {
 	myconf="--with-system-root-install=no
 	--localstatedir=/var
 	--without-rhgb-compat-link
-	--enable-systemd-integration
-	--with-systemdunitdir="$(systemd_get_systemunitdir)"
+	$(use_enable systemd systemd-integration)
+	$(use_with systemd systemdunitdir "$(systemd_get_systemunitdir)"
 	$(use_enable !static-libs shared)
 	$(use_enable static-libs static)
 	$(use_enable debug tracing)
