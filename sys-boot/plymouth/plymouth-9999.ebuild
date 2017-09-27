@@ -55,7 +55,7 @@ src_configure() {
 	--localstatedir=/var
 	--without-rhgb-compat-link
 	$(use_enable systemd systemd-integration)
-	$(use_with systemd systemdunitdir "$(systemd_get_systemunitdir)"
+	$(use_with systemd systemdunitdir "$(systemd_get_systemunitdir)")
 	$(use_enable !static-libs shared)
 	$(use_enable static-libs static)
 	$(use_enable debug tracing)
