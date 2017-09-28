@@ -3,7 +3,7 @@
 
 EAPI="6"
 ETYPE="sources"
-
+K_BASE_VER="3.4.0"
 K_SECURITY_UNSUPPORTED="1"
 
 inherit kernel-2
@@ -30,11 +30,17 @@ src_unpack() {
 	unpack "${WORKDIR}/platform.tar"
 }
 
+src_prepare() {
+	# TODO compress default config and use devspace instead.
+	# https://devmanual.gentoo.org/ebuild-writing/functions/src_prepare/epatch/index.html
+	epatch "${FILESDIR}/${P}-generic-config.patch"
+}
+
 src_compile() {
 	! use binary && return
 
-	ARCH=arm
-	CROSS_COMPILE=arm-linux-gnueabihf-
+	#ARCH=arm
+	#CROSS_COMPILE=arm-linux-gnueabihf
 }
 
 install_sources() {
@@ -42,7 +48,6 @@ install_sources() {
 	dodir /usr/src
 	echo ">>> Copying sources..."
 	mv "../3.4/" "${ED}"/usr/src/"${P}" || die
-	
 	# if the symlink doesnt exist, lets create it
 	[[ ! -h ${EROOT}usr/src/linux ]] && ln -sf ${P} "${EROOT}"usr/src/linux || die
 }
