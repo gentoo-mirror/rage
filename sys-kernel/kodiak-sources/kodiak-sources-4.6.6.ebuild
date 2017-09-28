@@ -4,6 +4,8 @@
 EAPI="6"
 ETYPE="sources"
 
+K_SECURITY_UNSUPPORTED="1"
+
 inherit kernel-2
 detect_version
 detect_arch
@@ -40,6 +42,9 @@ install_sources() {
 	dodir /usr/src
 	echo ">>> Copying sources..."
 	mv "../3.4/" "${ED}"/usr/src/"${P}" || die
+	
+	# if the symlink doesnt exist, lets create it
+	[[ ! -h ${EROOT}usr/src/linux ]] && ln -sf ${P} "${EROOT}"usr/src/linux || die
 }
 
 pkg_postinst() {
