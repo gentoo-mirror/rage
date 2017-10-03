@@ -5,14 +5,14 @@ EAPI=6
 
 inherit eutils git-r3
 
-DESCRIPTION=""
-HOMEPAGE=""
-SRC_URI="https://github.com/LineageOS/android_system_core"
-LICENSE="Apache-2.0"
+DESCRIPTION="Open-source, distributed, highly scalable platform designed to provide robust telecom services"
+HOMEPAGE="https://www.2600hz.org/"
+SRC_URI="https://github.com/2600Hz/kazoo.git"
+LICENSE="MPL-1.1"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="pdf"
 
 DEPEND="
      app-arch/zip
@@ -25,6 +25,21 @@ DEPEND="
      sys-libs/ncurses:5
      dev-vcs/git
      dev-libs/expat
-     app-text/htmldoc"
+     # htmldoc is required only if you want to be able to download PDFs.
+     pdf? ( app-text/htmldoc )"
 
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+     dev-lang/erlang"
+     
+# https://docs.2600hz.com/dev/doc/installation/     
+     
+cd /opt
+git clone https://github.com/2600Hz/kazoo.git
+cd kazoo
+make
+
+make compile-test
+make proper
+
+sudo ln -s core/sup/priv/sup /usr/bin/sup
+alias sup='KAZOO_ROOT=/opt/kazoo sup'
