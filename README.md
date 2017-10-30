@@ -1,4 +1,5 @@
 # Gentoo Overlay
+[![Build Status](https://travis-ci.org/lramage94/gentoo-overlay.svg?branch=master)](https://travis-ci.org/lramage94/gentoo-overlay)
 This is my personal overlay used for development and therefore is UNSTABLE. Use at your own risk.
 
 ## Installation
