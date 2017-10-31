@@ -14,7 +14,7 @@ sync-uri = https://github.com/lramage94/gentoo-overlay.git
 priority=9999
 ```
 
-Afterwards, simply run `emerge --sync`, and Portage should seamlessly make all our ebuilds available.
+Afterwards, simply run `emerge --sync`, and Portage should seamlessly make all ebuilds available.
 
 After performing those steps, the following should work (or any other package from this overlay):
 
