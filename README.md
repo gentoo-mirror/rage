@@ -10,7 +10,7 @@ To enable this overlay make sure you are using a recent Portage version (at leas
 [rage-overlay]
 location = /usr/local/portage/rage-overlay
 sync-type = git
-sync-uri = https://github.com/lramage94/gentoo-overlay.git
+sync-uri = https://github.com/lramage94/overlay.git
 priority=9999
 ```
 
