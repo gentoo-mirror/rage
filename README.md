@@ -1,14 +1,14 @@
-# Gentoo Overlay [![Build Status](https://travis-ci.org/lramage94/gentoo-overlay.svg?branch=master)](https://travis-ci.org/lramage94/gentoo-overlay)
+# Gentoo Overlay [![Build Status](https://travis-ci.org/lramage94/overlay.svg?branch=master)](https://travis-ci.org/lramage94/overlay)
 This is my personal overlay used for development and therefore is UNSTABLE. Use at your own risk.
 
 ## Installation
 
 [Local overlays](https://wiki.gentoo.org/wiki/Custom_repository) should be managed via `/etc/portage/repos.conf/`.
-To enable this overlay make sure you are using a recent Portage version (at least `2.2.14`), and create a `/etc/portage/repos.conf/rage-overlay.conf` file containing precisely:
+To enable this overlay make sure you are using a recent Portage version (at least `2.2.14`), and create a `/etc/portage/repos.conf/rage.conf` file containing precisely:
 
 ```
-[rage-overlay]
-location = /usr/local/portage/rage-overlay
+[rage]
+location = /usr/local/portage/rage
 sync-type = git
 sync-uri = https://github.com/lramage94/overlay.git
 priority=9999
