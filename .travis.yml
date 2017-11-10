@@ -8,7 +8,7 @@ services:
 
 before_install:
 - docker create -v /usr/portage --name portage gentoo/portage
-- docker run --volumes-from portage --name gentoo -it -v $(pwd):/home/repoman/ lramage94/repoman /bin/sh -c "repoman -dx full"
+- docker run --volumes-from portage --name gentoo -it -v $(pwd):/home/repoman/ lramage94/repoman /bin/sh -c "repoman -dxi full"
 
 script:
 - repoman -dxi full
