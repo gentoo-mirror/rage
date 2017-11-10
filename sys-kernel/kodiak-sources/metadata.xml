@@ -4,9 +4,9 @@
 	<maintainer type="person">
 		<email>ramage.lucas94@gmail.com</email>
 	</maintainer>
-    <use>
-        <flag name="binary">Builds and installs kernel automatically</flag>
-        <flag name="kexec">Enables CONFIG_KEXEC support in the kernel</flag>
-        <flag name="otg">Enables CONFIG_USB_OTG support in the kernel</flag>
-    </use>
+	<use>
+		<flag name="binary">Builds and installs kernel automatically</flag>
+		<flag name="kexec">Enables CONFIG_KEXEC support in the kernel</flag>
+		<flag name="otg">Enables CONFIG_USB_OTG support in the kernel</flag>
+	</use>
 </pkgmetadata>
