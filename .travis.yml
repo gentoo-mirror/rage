@@ -11,4 +11,4 @@ before_install:
 - docker run --volumes-from portage --name gentoo -it -v $(pwd):/home/repoman/ lramage94/repoman /bin/sh -c "repoman -dx full"
 
 script:
-- repoman -dx full
+- repoman -dxi full
