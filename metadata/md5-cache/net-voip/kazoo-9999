@@ -1,13 +1,13 @@
-DEFINED_PHASES=unpack
-DEPEND=app-arch/zip app-arch/unzip dev-libs/expat dev-libs/libxslt sys-libs/zlib dev-libs/openssl net-misc/curl sys-libs/ncurses:5 dev-vcs/git dev-libs/expat # htmldoc is required only if you want to be able to download PDFs. pdf? ( app-text/htmldoc ) >=dev-vcs/git-1.8.2.1
-DESCRIPTION=Open-source, distributed, highly scalable platform designed to provide robust telecom services
+DEFINED_PHASES=test unpack
+DEPEND=app-arch/zip app-arch/unzip dev-libs/expat dev-libs/libxslt sys-libs/zlib dev-libs/openssl:* net-misc/curl sys-libs/ncurses:5 dev-vcs/git dev-libs/expat pdf? ( app-text/htmldoc ) >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Distributed, highly scalable platform providing robust telecom services
 EAPI=6
 HOMEPAGE=https://www.2600hz.org/
 IUSE=pdf
 KEYWORDS=~amd64 ~x86
 LICENSE=MPL-1.1
-RDEPEND=app-arch/zip app-arch/unzip dev-libs/expat dev-libs/libxslt sys-libs/zlib dev-libs/openssl net-misc/curl sys-libs/ncurses:5 dev-vcs/git dev-libs/expat # htmldoc is required only if you want to be able to download PDFs. pdf? ( app-text/htmldoc ) dev-lang/erlang
+RDEPEND=app-arch/zip app-arch/unzip dev-libs/expat dev-libs/libxslt sys-libs/zlib dev-libs/openssl:* net-misc/curl sys-libs/ncurses:5 dev-vcs/git dev-libs/expat pdf? ( app-text/htmldoc ) dev-lang/erlang
 SLOT=0
 SRC_URI=https://github.com/2600Hz/kazoo.git
 _eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	227b041a120d309fdefbebb3b8c1dfa9	git-r3	52a888802d25387c2c74cb845d1219bc	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
-_md5_=e399d9352485b75bbb99982c84c19e61
+_md5_=f8f412add5681c1021e36816616c4398
