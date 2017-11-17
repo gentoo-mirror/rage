@@ -5,13 +5,13 @@ EAPI=6
 
 inherit eutils git-r3
 
-DESCRIPTION=""
-HOMEPAGE=""
-SRC_URI="https://github.com/LineageOS/android_system_core"
+DESCRIPTION="Android bootimg creation tool"
+HOMEPAGE="https://github.com/osm0sis/mkbootimg"
+SRC_URI="https://github.com/osm0sis/mkbootimg.git"
 LICENSE="Apache-2.0"
 
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~x86 ~arm"
 IUSE=""
 
 DEPEND=""
