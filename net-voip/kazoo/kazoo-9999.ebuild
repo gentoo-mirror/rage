@@ -33,13 +33,13 @@ RDEPEND="${DEPEND}
      
 # https://docs.2600hz.com/dev/doc/installation/     
      
-cd /opt
-git clone https://github.com/2600Hz/kazoo.git
-cd kazoo
-make
+#cd /opt
+#git clone https://github.com/2600Hz/kazoo.git
+#cd kazoo
+#make
 
-make compile-test
-make proper
+#make compile-test
+#make proper
 
-sudo ln -s core/sup/priv/sup /usr/bin/sup
-alias sup='KAZOO_ROOT=/opt/kazoo sup'
+#sudo ln -s core/sup/priv/sup /usr/bin/sup
+#alias sup='KAZOO_ROOT=/opt/kazoo sup'
