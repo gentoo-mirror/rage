@@ -6,7 +6,7 @@ EAPI="6"
 EGIT_REPO_URI="https://github.com/dell/dkms"
 EGIT_COMMIT=8c3065c6b26d573d55abfcb17b422204ba63e590
 
-inherit eutils bash-completion git-r3
+inherit eutils git-r3
 
 DESCRIPTION="Dynamic Kernel Module Support"
 HOMEPAGE="https://github.com/dell/dkms"
@@ -19,7 +19,7 @@ src_install () {
 	sed -i "s:prepare-all:prepare:g" ./dkms || die
 	dosbin dkms
 	dosbin dkms_mkkerneldoth
-	
+
 	keepdir /var/lib/dkms
 	insinto /var/lib/dkms
 	doins dkms_dbversion
@@ -28,11 +28,7 @@ src_install () {
 	insinto /etc/dkms
 	newins dkms_framework.conf framework.conf
 	doins template-dkms-mkrpm.spec
-	
+
 	doman dkms.8
-	dodoc AUTHORS COPYING sample.conf sample.spec
-	
-	if use bash-completion; then
-		dobashcompletion ./dkms.bash-completion
-	fi
+	dodoc AUTHORS sample.conf sample.spec
 }
