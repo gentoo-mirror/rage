@@ -41,7 +41,7 @@ src_prepare() {
 	epatch "${FILESDIR}/misc-fixes.patch"
 	eapply_user
 	# TODO compress default config and use devspace instead.
-	cp "${FILESDIR}/config-${PV}" "${S}/config"
+	xz -cd "${FILESDIR}/config-${PV}" > "${S}/config"
 }
 
 src_compile() {
