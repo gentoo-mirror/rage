@@ -33,5 +33,5 @@ RDEPEND="${DEPEND}"
 
 src_compile() {
 	cd "${S}"/src
-	emake || die "Make failed!"
+	emake 
 }
