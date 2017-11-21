@@ -38,6 +38,6 @@ src_test(){
 	emake compile-test
 }
 #make proper
-
+#make build-release
 #dosym core/sup/priv/sup /usr/bin/sup
 #alias sup='KAZOO_ROOT=/opt/kazoo sup'
