@@ -1,5 +1,5 @@
 dev-python/pyobd 0.9.3: OBD-II compliant car diagnostic tool.
-dev-util/mkbootimg 9999: Android bootimg creation tool
+dev-util/mkbootimg 20170815: Android bootimg creation tool
 games-fps/tesseract 2014.05.12: a fork of Cube 2: Sauerbraten with upgraded modern rendering techniques.
 media-sound/gdigi 0.4.0: a tool aimed to provide X-Edit functionality to Linux users
 net-voip/kazoo 9999: Distributed, highly scalable platform providing robust telecom services
