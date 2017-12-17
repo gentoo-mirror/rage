@@ -2,7 +2,3 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-net-voip/kazoo:pdf - Enables support for downloading company directories
-sys-kernel/kodiak-sources:binary - Builds and installs kernel automatically
-sys-kernel/kodiak-sources:kexec - Enables CONFIG_KEXEC support in the kernel
-sys-kernel/kodiak-sources:otg - Enables CONFIG_USB_OTG support in the kernel
