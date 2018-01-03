@@ -3,7 +3,7 @@
 
 EAPI=6
 
-EGIT_SRC_URI=""
+EGIT_REPO_URI=""
 EGIT_COMMIT=""
 
 inherit eutils git-r3
