@@ -1,11 +1,11 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 PYTHON_COMPAT=( python3_4 )
 
 EGIT_REPO_URI="https://github.com/postmarketOS/pmbootstrap"
-EGIT_COMMIT="eb1f4a400266597d4b30455239ca8321f92e1399"
+EGIT_COMMIT="e203c42d5b574f4fc487cda7ebfdeab90d3951a7"
 
 inherit eutils git-r3
 
