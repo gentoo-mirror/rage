@@ -1,8 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=remote control for your desktop
-EAPI=6
-HOMEPAGE=http://github.org/lramage94/stemware
-KEYWORDS=~amd64 ~x86
-LICENSE=GPL-2
-SLOT=0
-_md5_=4fbcf400aef7d2bac5563d8180864569
