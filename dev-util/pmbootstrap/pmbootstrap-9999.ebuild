@@ -5,7 +5,7 @@ EAPI=6
 PYTHON_COMPAT=( python3_4 )
 
 EGIT_REPO_URI="https://github.com/postmarketOS/pmbootstrap"
-EGIT_COMMIT="e203c42d5b574f4fc487cda7ebfdeab90d3951a7"
+EXPERIMENTAL="true"
 
 inherit eutils git-r3
 
