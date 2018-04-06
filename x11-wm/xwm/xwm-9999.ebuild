@@ -1,29 +1,26 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit savedconfig toolchain-funcs
+inherit savedconfig toolchain-funcs git-r3
 
 DESCRIPTION="eXtended Window Manager is based on dwm-plus, a fork of dwm."
-HOMEPAGE="http://github.com/lramage94/xwm"
-EGIT_REPO_URI="git://github.com/lramage94/xwm.git"
+HOMEPAGE="https://github.com/lramage94/xwm"
+EGIT_REPO_URI="https://github.com/lramage94/xwm.git"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~x86-fbsd"
 IUSE="xinerama"
 
-RDEPEND="
-	media-libs/fontconfig
+RDEPEND="media-libs/fontconfig
 	x11-libs/libX11
 	x11-libs/libXft
-	xinerama? ( x11-libs/libXinerama )
-"
-DEPEND="
-	${RDEPEND}
-	xinerama? ( x11-proto/xineramaproto )
-"
+	xinerama? ( x11-libs/libXinerama )"
+
+DEPEND="${RDEPEND}
+	xinerama? ( x11-proto/xineramaproto )"
 
 src_prepare() {
 	sed -i \
