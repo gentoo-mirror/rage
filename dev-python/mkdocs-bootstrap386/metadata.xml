@@ -4,4 +4,7 @@
 	<maintainer type="person">
 		<email>ramage.lucas@openmailbox.org</email>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">lramage94/mkdocs-bootstrap386</remote-id>
+	</upstream>
 </pkgmetadata>

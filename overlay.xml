@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+	<repo priority="50" quality="experimental" status="unofficial">
+		<name>rage</name>
+		<description>personal overlay for gentoo linux</description>
+		<homepage>https://github.com/lramage94/overlay</homepage>
+		<owner>
+			<email>ramage.lucas@openmailbox.org</email>
+		</owner>
+		<source type="git">https://github.com/lramage94/overlay.git</source>
+	</repo>
+</repositories>
