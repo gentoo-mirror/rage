@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-<maintainer type="person">
-	<email>ramage.lucas@openmailbox.org</email>
-</maintainer>
+	<maintainer type="person">
+		<email>ramage.lucas@openmailbox.org</email>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">osm0sis/mkbootimg</remote-id>
+	</upstream>
 </pkgmetadata>

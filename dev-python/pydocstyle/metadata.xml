@@ -10,6 +10,7 @@
 		<name>Proxy Maintainers</name>
 	</maintainer>
 	<upstream>
+		<doc>http://pydocstyle.org</doc>
 		<remote-id type="github">PyCQA/pydocstyle</remote-id>
 	</upstream>
 </pkgmetadata>

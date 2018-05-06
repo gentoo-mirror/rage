@@ -10,6 +10,7 @@
 		<name>Proxy Maintainers</name>
 	</maintainer>
 	<upstream>
+		<changelog>https://github.com/klen/pylama/raw/develop/Changelog</changelog>
 		<remote-id type="github">klen/pylama</remote-id>
 	</upstream>
 </pkgmetadata>
