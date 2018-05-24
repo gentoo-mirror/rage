@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit savedconfig toolchain-funcs git-r3
+inherit git-r3 savedconfig toolchain-funcs
 
 DESCRIPTION="eXtended Window Manager is based on dwm-plus, a fork of dwm."
 HOMEPAGE="https://github.com/lramage94/xwm"
@@ -23,6 +23,8 @@ DEPEND="${RDEPEND}
 	xinerama? ( x11-proto/xineramaproto )"
 
 src_prepare() {
+	default
+	
 	sed -i \
 		-e "s/CFLAGS = -std=c99 -pedantic -Wall -Os/CFLAGS += -std=c99 -pedantic -Wall/" \
 		-e "/^LDFLAGS/{s|=|+=|g;s|-s ||g}" \
@@ -32,21 +34,18 @@ src_prepare() {
 		-e "s@/usr/X11R6/lib@${EPREFIX}/usr/lib@" \
 		-e "s@-I/usr/include@@" -e "s@-L/usr/lib@@" \
 		-e "s/\/freetype2/\ -I\/usr\/include\/freetype2/" \
-		config.mk || die
+		"${S}/src/config.mk" || die
 	sed -i \
 		-e '/@echo CC/d' \
 		-e 's|@${CC}|$(CC)|g' \
 		Makefile || die
-
-	restore_config config.h
-	epatch_user
 }
 
 src_compile() {
 	if use xinerama; then
-		emake CC=$(tc-getCC) xwm
+		emake CC=$(tc-getCC)
 	else
-		emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS="" xwm
+		emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS=""
 	fi
 }
 
