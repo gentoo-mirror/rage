@@ -1,4 +1,4 @@
-# Gentoo Overlay [![Build Status](https://travis-ci.org/lramage94/overlay.svg?branch=master)](https://travis-ci.org/lramage94/overlay)
+# Gentoo Overlay
 
 ## Installation
 
@@ -6,7 +6,7 @@
     [rage]
     location = /usr/local/portage/rage
     sync-type = git
-    sync-uri = https://github.com/lramage94/overlay.git
+    sync-uri = https://gitlab.com/lramage94/overlay.git
     priority=9999
     EOF
 
