@@ -6,8 +6,8 @@ EAPI=6
 inherit git-r3 savedconfig toolchain-funcs
 
 DESCRIPTION="eXtended Window Manager is based on dwm-plus, a fork of dwm."
-HOMEPAGE="https://github.com/lramage94/xwm"
-EGIT_REPO_URI="https://github.com/lramage94/xwm.git"
+HOMEPAGE="https://gitlab.com/lramage94/xwm"
+EGIT_REPO_URI="https://gitlab.com/lramage94/xwm.git"
 
 LICENSE="MIT"
 SLOT="0"
