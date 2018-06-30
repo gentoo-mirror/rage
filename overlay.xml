@@ -3,10 +3,10 @@
 	<repo priority="50" quality="experimental" status="unofficial">
 		<name>rage</name>
 		<description>personal overlay for gentoo linux</description>
-		<homepage>https://github.com/lramage94/overlay</homepage>
+		<homepage>https://gitlab.com/lramage94/overlay</homepage>
 		<owner>
 			<email>ramage.lucas@openmailbox.org</email>
 		</owner>
-		<source type="git">https://github.com/lramage94/overlay.git</source>
+		<source type="git">https://gitlab.com/lramage94/overlay.git</source>
 	</repo>
 </repositories>
