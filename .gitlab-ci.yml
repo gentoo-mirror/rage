@@ -1,10 +1,11 @@
 image: alpine:3.8
 
 before_script:
-    - apk update && apk add bash git python py2-lxml rsync wget xz
-    - git clone https://anongit.gentoo.org/git/proj/portage.git
-    - cd portage && python setup.py install
-    - cd repoman && python setup.py install
+    - apk update && apk add bash git python py2-lxml py2-pip rsync wget xz
+    - pip install pyyaml
+    - git clone https://anongit.gentoo.org/git/proj/portage.git /tmp/portage
+    - python /tmp/portage/setup.py install 
+    - python /tmp/portage/repoman/setup.py install
     - git clone https://gitlab.com/lramage94/gentoo.git /usr/portage
     - adduser -S portage && addgroup portage
 
