@@ -1,9 +1,13 @@
-image: docker:latest
+image: alpine:3.8
 
 before_script:
-    - docker create -v /usr/portage --name portage gentoo/portage
-  
+    - apk update && apk add bash git python py2-lxml rsync wget
+    - wget "http://distfiles.gentoo.org/snapshots/portage-latest.tar.xz"
+    - tar -xjvf portage-latest.tar.xz -C /usr/
+    - git clone https://gitlab.com/lramage94/gentoo.git /usr/portage
+    - adduser -S portage && addgroup portage
+
 test:
   stage: test
   script:
-    - docker run --volumes-from portage --name gentoo -it -v $(pwd):/home/repoman/ lramage94/repoman /bin/sh -c "ARCH=x86_64 ACCEPT_KEYWORDS='' repoman -dxi full"
+    - ARCH=x86_64 ACCEPT_KEYWORDS='' repoman -dxi full
