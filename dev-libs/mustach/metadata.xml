@@ -3,9 +3,9 @@
 <pkgmetadata>
 	<maintainer type="person">
 		<email>ramage.lucas@openmailbox.org</email>
-		<description>Lucas Ramage</description>
+		<description>Lucas Ramage</description>		
 	</maintainer>
 	<upstream>
-		<remote-id type="gitlab">lramage94/xwm</remote-id>
+		<remote-id type="gitlab">jobol/mustach</remote-id>
 	</upstream>
 </pkgmetadata>

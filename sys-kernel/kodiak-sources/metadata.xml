@@ -3,9 +3,10 @@
 <pkgmetadata>
 	<maintainer type="person">
 		<email>ramage.lucas@openmailbox.org</email>
+		<description>Lucas Ramage</description>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">lramage94/android_kernel_amazon_kodiak</remote-id>
+		<remote-id type="gitlab">lramage94/android_kernel_amazon_kodiak</remote-id>
 	</upstream>
 	<use>
 		<flag name="binary">Builds and installs kernel automatically</flag>

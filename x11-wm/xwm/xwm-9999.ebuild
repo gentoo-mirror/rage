@@ -3,13 +3,15 @@
 
 EAPI=6
 
+EGIT_REPO_URI="https://gitlab.com/lramage94/xwm.git"
+EXPERIMENTAL="true"
+
 inherit git-r3 savedconfig toolchain-funcs
 
 DESCRIPTION="eXtended Window Manager is based on dwm-plus, a fork of dwm."
 HOMEPAGE="https://gitlab.com/lramage94/xwm"
-EGIT_REPO_URI="https://gitlab.com/lramage94/xwm.git"
-
 LICENSE="MIT"
+
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~x86-fbsd"
 IUSE="xinerama"

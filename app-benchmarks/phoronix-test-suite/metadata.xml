@@ -3,8 +3,10 @@
 <pkgmetadata>
 	<maintainer type="person">
 		<email>ramage.lucas@openmailbox.org</email>
+		<description>Lucas Ramage</description>		
 	</maintainer>
 	<upstream>
+		<changelog>https://raw.githubusercontent.com/phoronix-test-suite/phoronix-test-suite/master/ChangeLog</changelog>
 		<remote-id type="github">phoronix-test-suite/phoronix-test-suite</remote-id>
 	</upstream>
 </pkgmetadata>
