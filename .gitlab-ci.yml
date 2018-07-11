@@ -4,7 +4,7 @@ before_script:
     - apk update && apk add bash git python py2-lxml py2-pip rsync wget xz
     - pip install pyyaml
     - git clone https://anongit.gentoo.org/git/proj/portage.git /tmp/portage
-    - cd portage && ./setup.py install && cd repoman && ./setup.py install
+    - cd /tmp/portage && ./setup.py install && cd repoman && ./setup.py install
     - adduser -S portage && addgroup portage
     - git clone https://gitlab.com/lramage94/gentoo.git /usr/portage
 
