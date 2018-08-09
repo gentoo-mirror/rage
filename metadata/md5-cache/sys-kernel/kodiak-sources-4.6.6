@@ -6,9 +6,9 @@ HOMEPAGE=https://www.amazon.com/gp/help/customer/display.html/ref=hp_bc_nav?ie=U
 IUSE=binary otg kexec symlink build
 KEYWORDS=~arm
 LICENSE=GPL-2
-RDEPEND=kexec? ( sys-apps/kexec-tools ) !build? ( >=sys-libs/ncurses-5.2 sys-devel/make dev-lang/perl sys-devel/bc virtual/libelf )
+RDEPEND=kexec? ( sys-apps/kexec-tools ) !build? ( dev-lang/perl sys-devel/bc sys-devel/bison sys-devel/flex sys-devel/make >=sys-libs/ncurses-5.2 virtual/libelf )
 RESTRICT=binchecks strip mirror
 SLOT=0
 SRC_URI=https://fire-phone-src.s3.amazonaws.com/z6qIQG7tiQp8PcgZIwJmmkxgNj/fire-phone_src_4.6.6.tar.bz2
-_eclasses_=eapi7-ver	d97a56a62c7df8614afddcb25f5ff00f	epatch	9a5f039771f143195164a15a4faa41a1	estack	43ddf5aaffa7a8d0482df54d25a66a1f	kernel-2	a06444ab36072f336c630b44b641ba95	mount-boot	1e82d96b7a7dcb483b412497a90bb646	multilib	97f470f374f2e94ccab04a2fb21d811e	python-any-r1	6faea633ae2f79f6d55dcfd431b79fbf	python-utils-r1	7db901256449fef43c3aaa4d486c1c63	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_eclasses_=eapi7-ver	d97a56a62c7df8614afddcb25f5ff00f	epatch	9a5f039771f143195164a15a4faa41a1	estack	43ddf5aaffa7a8d0482df54d25a66a1f	kernel-2	60a6ba2f0dce2a7868ae1e3dc9996063	mount-boot	1e82d96b7a7dcb483b412497a90bb646	multilib	97f470f374f2e94ccab04a2fb21d811e	python-any-r1	6faea633ae2f79f6d55dcfd431b79fbf	python-utils-r1	7db901256449fef43c3aaa4d486c1c63	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
 _md5_=430e267a14152ba243edee536db1f530
