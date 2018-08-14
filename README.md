@@ -1,6 +1,7 @@
 # Rage <OxR463> Overlay
 
 [![Gentoo][gentoo-badge]][gentoo-url]
+[![Funtoo][funtoo-badge]][funtoo-url]
 
 ## Installation
 
@@ -14,5 +15,7 @@
 
 Afterwards, run `emerge --sync` to checkout the latest revision.
 
+[funtoo-url]: https://www.funtoo.org
+[funtoo-badge]: https://www.funtoo.org/images/2/2b/Funtoo-badge.png
 [gentoo-url]: https://www.gentoo.org
 [gentoo-badge]: https://www.gentoo.org/assets/img/badges/gentoo-badge2.png
