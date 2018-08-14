@@ -1,4 +1,6 @@
-# Gentoo Overlay
+# Rage <OxR463> Overlay
+
+[![Gentoo][gentoo-badge]][gentoo-url]
 
 ## Installation
 
@@ -11,3 +13,6 @@
     EOF
 
 Afterwards, run `emerge --sync` to checkout the latest revision.
+
+[gentoo-url]: https://www.gentoo.org
+[gentoo-badge]: https://www.gentoo.org/assets/img/badges/gentoo-badge2.png
