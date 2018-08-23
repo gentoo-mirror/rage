@@ -5,7 +5,7 @@
 		<description>personal overlay for gentoo linux</description>
 		<homepage>https://gitlab.com/lramage94/overlay</homepage>
 		<owner>
-			<email>ramage.lucas@openmailbox.org</email>
+			<email>ramage.lucas@protonmail.com</email>
 		</owner>
 		<source type="git">https://gitlab.com/lramage94/overlay.git</source>
 	</repo>
