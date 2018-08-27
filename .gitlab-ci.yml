@@ -9,6 +9,7 @@ before_script:
     - cd ../.. && rm -rf portage
     - adduser -S portage && addgroup portage
     - git clone https://gitlab.com/lramage94/gentoo.git /usr/portage
+    - mkdir -p /usr/portage/distfiles
 
 test:
   stage: test
