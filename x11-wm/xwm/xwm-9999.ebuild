@@ -22,11 +22,11 @@ RDEPEND="media-libs/fontconfig
 	xinerama? ( x11-libs/libXinerama )"
 
 DEPEND="${RDEPEND}
-	xinerama? ( x11-proto/xineramaproto )"
+	xinerama? ( x11-base/xorg-proto )"
 
 src_prepare() {
 	default
-	
+
 	sed -i \
 		-e "s/CFLAGS = -std=c99 -pedantic -Wall -Os/CFLAGS += -std=c99 -pedantic -Wall/" \
 		-e "/^LDFLAGS/{s|=|+=|g;s|-s ||g}" \

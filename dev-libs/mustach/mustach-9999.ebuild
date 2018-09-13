@@ -20,7 +20,7 @@ DEPEND="dev-libs/json-c:="
 
 src_install() {
 	insinto /usr/include
-	doins "${PN}".c 
+	doins "${PN}".c
 	doheader "${PN}".h
 
 	dobin "${PN}"
