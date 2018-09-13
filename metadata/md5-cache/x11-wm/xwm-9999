@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst prepare unpack
-DEPEND=media-libs/fontconfig x11-libs/libX11 x11-libs/libXft xinerama? ( x11-libs/libXinerama ) xinerama? ( x11-proto/xineramaproto ) >=dev-vcs/git-1.8.2.1[curl]
+DEPEND=media-libs/fontconfig x11-libs/libX11 x11-libs/libXft xinerama? ( x11-libs/libXinerama ) xinerama? ( x11-base/xorg-proto ) >=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=eXtended Window Manager is based on dwm-plus, a fork of dwm.
 EAPI=6
 HOMEPAGE=https://gitlab.com/lramage94/xwm
@@ -9,4 +9,4 @@ LICENSE=MIT
 RDEPEND=media-libs/fontconfig x11-libs/libX11 x11-libs/libXft xinerama? ( x11-libs/libXinerama )
 SLOT=0
 _eclasses_=git-r3	918d6a744039c29af2cadc7317459765	multilib	97f470f374f2e94ccab04a2fb21d811e	portability	2b88d3ecc35035a3b8ab628b49cafb0e	savedconfig	e6948c872ff47e15a10e5ad1be15c18e	toolchain-funcs	e4a9360924c5ce9f52e61342cde58512
-_md5_=6368b3459031651466422779e28f50e8
+_md5_=f7d532ee84809ad3980c4a5aa1571837
