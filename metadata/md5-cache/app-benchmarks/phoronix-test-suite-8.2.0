@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install prepare
+DESCRIPTION=Phoronix's comprehensive, cross-platform testing and benchmark suite
+EAPI=6
+HOMEPAGE=https://www.phoronix-test-suite.com
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-lang/php[cli,curl,gd,json,posix,pcntl,truetype,zip]
+SLOT=0
+SRC_URI=https://github.com/phoronix-test-suite/phoronix-test-suite/archive/v8.2.0.tar.gz -> phoronix-test-suite-8.2.0.tar.gz
+_eclasses_=bash-completion-r1	47a7402d95930413ce25ba8d857339bb	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	e4a9360924c5ce9f52e61342cde58512
+_md5_=6b269e4d4625a1b0753c2e1bb19e9c32
