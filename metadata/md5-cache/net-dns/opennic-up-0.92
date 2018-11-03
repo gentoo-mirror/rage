@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst
+DEPEND=net-analyzer/fping net-dns/ldns-utils net-misc/curl
+DESCRIPTION=OpenNIC auto DNS updater
+EAPI=7
+HOMEPAGE=https://github.com/kewlfft/opennic-up
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-3
+RDEPEND=net-analyzer/fping net-dns/ldns-utils net-misc/curl
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/kewlfft/opennic-up/archive/v0.92.tar.gz -> opennic-up-0.92.tar.gz
+_eclasses_=multilib	b2f01ad412baf81650c23fcf0975fa33	systemd	47c677ae1d7b69031f11f630ac09f0d1	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_md5_=a79c1c90539dff667d1181de53df7513
