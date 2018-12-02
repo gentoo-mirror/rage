@@ -1,19 +1,15 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
-
-EGIT_REPO_URI="https://github.com/osm0sis/mkbootimg.git"
-EGIT_COMMIT="8f1843e85db82d4990fecb4ec20aa2ad55ed5dbd"
-
-inherit epatch git-r3
+EAPI=7
 
 DESCRIPTION="Android bootimg creation tool"
 HOMEPAGE="https://github.com/osm0sis/mkbootimg"
-LICENSE="Apache-2.0"
+SRC_URI="https://github.com/osm0sis/${PN}/archive/${PV}.tar.gz"
 
+LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm"
+KEYWORDS="~amd64 ~arm ~x86"
 IUSE="static"
 
 DEPEND=""
@@ -30,8 +26,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}/no-strip-fix.patch"
-	eapply_user
+	default
+	sed 's|-s*$||g' Makefile || die
 }
 
 src_compile() {
