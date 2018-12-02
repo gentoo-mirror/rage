@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install prepare setup
+DESCRIPTION=Android bootimg creation tool
+EAPI=7
+HOMEPAGE=https://github.com/osm0sis/mkbootimg
+IUSE=static
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=Apache-2.0
+SLOT=0
+SRC_URI=https://github.com/osm0sis/mkbootimg/archive/2018.10.27.tar.gz
+_md5_=fbecf068094375e81c39cc22e3785466
