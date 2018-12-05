@@ -1,5 +1,6 @@
 # Rage <OxR463> Overlay
 
+[![Hacker][hacker-badge]][hacker-url]
 [![Gentoo][gentoo-badge]][gentoo-url]
 
 ## Installation
@@ -16,3 +17,5 @@ Afterwards, run `emerge --sync` to checkout the latest revision.
 
 [gentoo-url]: https://www.gentoo.org
 [gentoo-badge]: https://www.gentoo.org/assets/img/badges/gentoo-badge2.png
+[hacker-url]: http://www.catb.org/hacker-emblem
+[hacker-badge]: http://www.catb.org/hacker-emblem/hacker.png
