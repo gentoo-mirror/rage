@@ -9,7 +9,7 @@
     [rage]
     location = /usr/local/portage/rage
     sync-type = git
-    sync-uri = https://gitlab.com/lramage94/overlay.git
+    sync-uri = https://gitlab.com/oxr463/overlay.git
     priority=9999
     EOF
 
