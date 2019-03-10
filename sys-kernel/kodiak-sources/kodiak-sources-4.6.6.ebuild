@@ -1,12 +1,13 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI=6
 ETYPE="sources"
 K_BASE_VER="3.4.0"
 K_SECURITY_UNSUPPORTED="1"
 
-inherit kernel-2 epatch mount-boot
+inherit kernel-2 mount-boot
+
 detect_version
 detect_arch
 
@@ -23,8 +24,10 @@ KEYWORDS="~arm"
 IUSE="binary otg kexec"
 
 RESTRICT="binchecks strip mirror"
-DEPEND="binary? ( sys-kernel/genkernel )"
-RDEPEND="kexec? ( sys-apps/kexec-tools )"
+DEPEND="binary? ( sys-kernel/genkernel )
+	kexec? ( sys-apps/kexec-tools )"
+
+PATCHES=( "${FILEDIR}/misc-fixes.patch" )
 
 src_unpack() {
 	unpack ${MY_P}.tar.bz2
@@ -37,10 +40,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}/misc-fixes.patch"
-	eapply_user
-	# TODO compress default config and use devspace instead.
-	xz -cd "${FILESDIR}/config-${PV}" > "${S}/config"
+	default
+	xz -cd "${FILESDIR}/config-${PV}.xz" > "${S}/config"
 }
 
 src_compile() {

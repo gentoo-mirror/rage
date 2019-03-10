@@ -1,19 +1,24 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-EGIT_REPO_URI="https://gitlab.com/lramage94/xwm.git"
-EXPERIMENTAL="true"
+inherit savedconfig toolchain-funcs
 
-inherit git-r3 savedconfig toolchain-funcs
+if [[ ${PV} == "9999" ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://gitlab.com/oxr463/${PN}.git"
+	EXPERIMENTAL="true"
+else
+	SRC_URI="https://gitlab.com/oxr463/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.gz"
+	KEYWORDS="~amd64 ~x86 ~x86-fbsd"
+fi
 
 DESCRIPTION="eXtended Window Manager is based on dwm-plus, a fork of dwm."
-HOMEPAGE="https://gitlab.com/lramage94/xwm"
+HOMEPAGE="https://gitlab.com/oxr463/xwm"
 LICENSE="MIT"
 
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~x86-fbsd"
 IUSE="xinerama"
 
 RDEPEND="media-libs/fontconfig
