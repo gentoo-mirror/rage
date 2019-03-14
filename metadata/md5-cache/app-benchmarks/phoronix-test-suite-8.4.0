@@ -7,5 +7,5 @@ LICENSE=GPL-3
 RDEPEND=dev-lang/php[cli,curl,gd,json,posix,pcntl,truetype,zip]
 SLOT=0
 SRC_URI=https://github.com/phoronix-test-suite/phoronix-test-suite/archive/v8.4.0.tar.gz -> phoronix-test-suite-8.4.0.tar.gz
-_eclasses_=bash-completion-r1	47a7402d95930413ce25ba8d857339bb	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_eclasses_=bash-completion-r1	47a7402d95930413ce25ba8d857339bb	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	b45201c4e6c096b98e250336954e64b9
 _md5_=7d7abf2b3463b35f2d68c77ddd6fc03d
