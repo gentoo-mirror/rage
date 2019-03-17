@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -18,10 +18,10 @@ IUSE="test"
 RDEPEND=""
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
-	=dev-python/snowballstemmer-1.2.1[${PYTHON_USEDEP}]
+	>=dev-python/snowballstemmer-1.2.1[${PYTHON_USEDEP}]
 	test? (
 		virtual/python-pathlib[${PYTHON_USEDEP}]
-		=dev-python/mock-2.0.0[${PYTHON_USEDEP}]
+		>=dev-python/mock-2.0.0[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-pep8[${PYTHON_USEDEP}]
 	) "

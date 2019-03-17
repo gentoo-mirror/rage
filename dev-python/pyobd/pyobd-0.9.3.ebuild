@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -15,7 +15,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="ncurses wxwidgets"
 
 RDEPEND="dev-python/pyserial
-	wxwidgets? ( dev-python/wxpython:2.8 )"
+	wxwidgets? ( dev-python/wxpython )"
 
 DEPEND="ncurses? ( sys-libs/ncurses:* )
 	${RDEPEND}"
