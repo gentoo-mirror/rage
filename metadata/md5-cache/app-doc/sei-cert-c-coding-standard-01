@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=SEI CERT C Coding Standard
+EAPI=7
+HOMEPAGE=https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=454220
+KEYWORDS=~amd64 ~x86
+LICENSE=CERT
+RESTRICT=test
+SLOT=2016
+SRC_URI=https://resources.sei.cmu.edu/downloads/secure-coding/assets/sei-cert-c-coding-standard-2016-v01.pdf
+_md5_=9212e28a8ce6e03797d4b9889219314c
