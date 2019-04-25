@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-lang/perl
+DESCRIPTION=The Linux Security Auditing Tool
+EAPI=7
+HOMEPAGE=http://usat.sourceforge.net
+IUSE=minimal
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2+
+RDEPEND=dev-lang/perl !minimal? ( app-portage/portage-utils net-analyzer/nmap sys-apps/iproute2 sys-apps/which sys-process/lsof )
+SLOT=0
+SRC_URI=https://github.com/triode3/lsat/archive/v0.9.8.2.tar.gz -> lsat-0.9.8.2.tar.gz
+_eclasses_=multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	b45201c4e6c096b98e250336954e64b9
+_md5_=a7102dc33800dc1b94cf24d99818b6bb
