@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>ramage.lucas@protonmail.com</email>
+		<name>Lucas Ramage</name>
+	</maintainer>
+	<longdescription lang="en">
+		Linux Security Auditing Tool (LSAT) is a post install security auditing
+		tool. It is modular in design, so new features can be added quickly. It
+		checks inetd entries and scans for unneeded RPM packages. It is being
+		expanded to work with Linux distributions other than Red Hat, and checks
+		for kernel versions.
+	</longdescription>
+	<upstream>
+		<changelog>http://usat.sourceforge.net/changelog.html</changelog>
+		<remote-id type="github">triode3/lsat</remote-id>
+		<remote-id type="sourceforge">usat</remote-id>
+	</upstream>
+</pkgmetadata>
