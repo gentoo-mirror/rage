@@ -15,4 +15,3 @@ test:
   stage: test
   script:
     - PORTDIR='/usr/portage' ARCH=x86_64 ACCEPT_KEYWORDS='' repoman -dxi full
-
