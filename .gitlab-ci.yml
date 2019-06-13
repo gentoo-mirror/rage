@@ -14,6 +14,7 @@ before_script:
     - adduser -S portage && addgroup portage
     - git clone https://gitlab.com/oxr463/gentoo.git /usr/portage
     - mkdir -p /var/cache/distfiles
+    - eselect profile set default/linux/amd64/17.1
     - git clone https://gitlab.com/oxr463/ebuildbot.git /opt/ebuildbot
     - chmod +x /opt/ebuildbot/scripts/build.sh
 
