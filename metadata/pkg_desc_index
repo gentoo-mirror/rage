@@ -1,0 +1,23 @@
+app-admin/lsat 0.9.8.2: The Linux Security Auditing Tool
+app-benchmarks/gcc-perf 9999: Test ARM/X86 C/SIMD/ASM perf
+app-benchmarks/phoronix-test-suite 7.8.0 8.0.1 8.2.0 8.4.0 8.4.1: Phoronix's comprehensive, cross-platform testing and benchmark suite
+app-doc/sei-cert-c-coding-standard 01: SEI CERT C Coding Standard
+app-misc/bug 1.1: Simple Bug / ToDo tracker for the command line
+app-misc/shellcat 1.2: A template processor, which uses shell script syntax
+app-portage/portage-hooks 0.1: System of hooks for portage
+dev-libs/cjson 1.7.10: Ultralightweight JSON parser in ANSI C
+dev-libs/mustach 9999: C implementation of the mustache template library
+dev-libs/sds 2.0.0: Simple Dynamic Strings
+dev-python/mkdocs-bootstrap386 0.0.1: A vintage 1980s DOS inspired Twitter Bootstrap theme for MkDocs
+dev-python/pydocstyle 2.0.0: Static analysis tool for checking compliance with Python docstring conventions
+dev-python/pylama 7.4.3: Code audit tool for Python and JavaScript
+dev-python/pyobd 0.9.3: OBD-II compliant car diagnostic tool.
+dev-util/gse 9999: Gentoo Stateless Environment
+dev-util/mkbootimg 2018.10.27: Android bootimg creation tool
+dev-util/pmbootstrap 0.4.0 9999: Sophisticated chroot/build/flash tool to develop and install postmarketOS.
+media-fonts/ocr-a 1.0: OCR-A font, conformant to ANSI X3.17-1977, in TrueType format, with sources
+media-sound/gdigi 0.4.0: a tool aimed to provide X-Edit functionality to Linux users
+net-dns/opennic-up 0.92: OpenNIC auto DNS updater
+sys-kernel/dkms 2.4.0 2.6.1: Dynamic Kernel Module Support
+sys-kernel/kodiak-sources 4.6.6: Amazon Fire Phone Kernel Sources
+x11-wm/xwm 0.2: eXtended Window Manager is based on dwm-plus, a fork of dwm.
