@@ -7,7 +7,7 @@ app-misc/shellcat 1.2: A template processor, which uses shell script syntax
 app-portage/portage-hooks 0.1: System of hooks for portage
 dev-libs/cjson 1.7.10: Ultralightweight JSON parser in ANSI C
 dev-libs/mustach 9999: C implementation of the mustache template library
-dev-libs/sds 2.0.0: Simple Dynamic Strings
+dev-libs/sds 2.0.0-r1: Simple Dynamic Strings
 dev-python/mkdocs-bootstrap386 0.0.1: A vintage 1980s DOS inspired Twitter Bootstrap theme for MkDocs
 dev-python/pydocstyle 2.0.0: Static analysis tool for checking compliance with Python docstring conventions
 dev-python/pylama 7.4.3: Code audit tool for Python and JavaScript
