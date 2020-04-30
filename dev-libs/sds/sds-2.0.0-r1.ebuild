@@ -1,9 +1,9 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-inherit toolchain-funcs
+inherit eutils toolchain-funcs
 
 DESCRIPTION="Simple Dynamic Strings"
 HOMEPAGE="https://github.com/antirez/sds"
@@ -30,9 +30,10 @@ src_test() {
 }
 
 src_install() {
+	insinto  /usr/$(get_libdir)/
 	dolib.so "libsds.so.${PV}" || die "dolib.so failed."
-	dosym "libsds.so.${PV}" /usr/lib/libsds.so
-	dosym "libsds.so.${PV}" "/usr/lib/libsds.so.${PV%%.*}"
+	dosym "libsds.so.${PV}" /usr/$(get_libdir)/libsds.so
+	dosym "libsds.so.${PV}" "/usr/$(get_libdir)/libsds.so.${PV%%.*}"
 
 	insinto /usr/include/sds
 	doins sds.h || die "doins failed."
