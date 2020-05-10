@@ -2,12 +2,15 @@
 
 ## Installation
 
-    sudo bash -c "cat > /etc/portage/repos.conf/rage.conf" << EOF
-    [rage]
-    location = /var/db/repos/rage
-    sync-type = git
-    sync-uri = https://gitlab.com/oxr463/overlay.git
-    priority=9999
-    EOF
+```sh
+curl -L https://gitlab.com/oxr463/overlay/-/raw/master/.local/bin/install.sh | sh -
+```
 
-Afterwards, run `emerge --sync` to checkout the latest revision.
+**Note: this script requires elevated privileges in order to run.**
+
+## Vagrant
+
+```sh
+VAGRANT_CWD=".local/share/rage" vagrant up --provision
+```
+
