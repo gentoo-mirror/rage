@@ -4,6 +4,7 @@
 
 dev-util/gse:ccache - Enables ccache support
 dev-util/gse:distcc - Enables distcc support
+sys-apps/proot:care - Build dynamic CARE binary (more info - https://proot-me.github.io)
 sys-kernel/kodiak-sources:binary - Builds and installs kernel automatically
 sys-kernel/kodiak-sources:kexec - Enables CONFIG_KEXEC support in the kernel
 sys-kernel/kodiak-sources:otg - Enables CONFIG_USB_OTG support in the kernel
