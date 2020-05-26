@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>ramage.lucas@protonmail.com</email>
+		<description>Lucas Ramage</description>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">oxr463/quickstart</remote-id>
+	</upstream>
+	<use>
+		<flag name="cifs">Use <pkg>net-fs/cifs-utils</pkg></flag>
+		<flag name="lvm">Use <pkg>sys-fs/lvm2</pkg></flag>
+		<flag name="nfs">Use <pkg>net-fs/nfs-utils</pkg></flag>
+		<flag name="raid">Use <pkg>sys-fs/mdadm</pkg></flag>
+		<flag name="samba">Use <pkg>net-fs/samba</pkg></flag>
+		<flag name="uefi">Use <pkg>sys-fs/dosfstools</pkg></flag>
+	</use>
+</pkgmetadata>
