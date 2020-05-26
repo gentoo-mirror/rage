@@ -29,7 +29,7 @@ DEPEND="app-admin/syslog-ng
 		sys-apps/linux
 		sys-boot/grub
 		sys-kernel/genkernel
-		sys-process/vixie-cron
+		sys-process/cronie
 		uefi? ( sys-fs/dosfstools )"
 RDEPEND="${DEPEND}"
 BDEPEND="doc? ( app-text/pandoc )
