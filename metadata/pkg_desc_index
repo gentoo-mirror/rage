@@ -19,6 +19,7 @@ media-fonts/ocr-a 1.0: OCR-A font, conformant to ANSI X3.17-1977, in TrueType fo
 media-sound/gdigi 0.4.0: a tool aimed to provide X-Edit functionality to Linux users
 net-dns/opennic-up 0.92: OpenNIC auto DNS updater
 sys-apps/proot 5.1.0-r2: User-space implementation of chroot, mount --bind, and binfmt_misc
+sys-apps/quickstart 9999: An installer for Gentoo Linux written in POSIX shell
 sys-kernel/dkms 2.4.0 2.6.1: Dynamic Kernel Module Support
 sys-kernel/kodiak-sources 4.6.6: Amazon Fire Phone Kernel Sources
 x11-wm/xwm 0.2: eXtended Window Manager is based on dwm-plus, a fork of dwm.
