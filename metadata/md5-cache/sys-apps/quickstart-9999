@@ -1,13 +1,13 @@
 BDEPEND=doc? ( app-text/pandoc ) test? ( dev-util/shellcheck ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=install unpack
-DEPEND=app-admin/syslog-ng cifs? ( net-fs/cifs-utils ) lvm? ( sys-fs/lvm2 ) nfs? ( net-fs/nfs-utils ) raid? ( sys-fs/mdadm ) samba? ( net-fs/samba ) sys-apps/linux sys-boot/grub sys-kernel/genkernel sys-process/cronie uefi? ( sys-fs/dosfstools )
+DEPEND=app-admin/syslog-ng cifs? ( net-fs/cifs-utils ) lvm? ( sys-fs/lvm2 ) nfs? ( net-fs/nfs-utils ) raid? ( sys-fs/mdadm ) samba? ( net-fs/samba ) sys-boot/grub sys-kernel/genkernel sys-process/cronie uefi? ( sys-fs/dosfstools )
 DESCRIPTION=An installer for Gentoo Linux written in POSIX shell
 EAPI=7
 HOMEPAGE=https://github.com/oxr463/quickstart
 IUSE=cifs doc lvm nfs raid samba test uefi
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=app-admin/syslog-ng cifs? ( net-fs/cifs-utils ) lvm? ( sys-fs/lvm2 ) nfs? ( net-fs/nfs-utils ) raid? ( sys-fs/mdadm ) samba? ( net-fs/samba ) sys-apps/linux sys-boot/grub sys-kernel/genkernel sys-process/cronie uefi? ( sys-fs/dosfstools )
+RDEPEND=app-admin/syslog-ng cifs? ( net-fs/cifs-utils ) lvm? ( sys-fs/lvm2 ) nfs? ( net-fs/nfs-utils ) raid? ( sys-fs/mdadm ) samba? ( net-fs/samba ) sys-boot/grub sys-kernel/genkernel sys-process/cronie uefi? ( sys-fs/dosfstools )
 SLOT=0
 _eclasses_=git-r3	86a0188f2ad9eb3d65e4d031ab8a0422
-_md5_=525bcf59ecba20cb4c75b0e156e21311
+_md5_=0f63fb3e85bb4dc36b1bfae515a2c2be
