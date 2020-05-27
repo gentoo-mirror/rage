@@ -26,7 +26,6 @@ DEPEND="app-admin/syslog-ng
 		nfs? ( net-fs/nfs-utils )
 		raid? ( sys-fs/mdadm )
 		samba? ( net-fs/samba )
-		sys-apps/linux
 		sys-boot/grub
 		sys-kernel/genkernel
 		sys-process/cronie
