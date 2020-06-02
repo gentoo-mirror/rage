@@ -6,6 +6,7 @@ app-misc/bug 1.1: Simple Bug / ToDo tracker for the command line
 app-misc/shellcat 1.2: A template processor, which uses shell script syntax
 app-portage/portage-hooks 0.1: System of hooks for portage
 dev-libs/cjson 1.7.10: Ultralightweight JSON parser in ANSI C
+dev-libs/fyaml 0.5.7: Fully feature complete YAML parser and emitter
 dev-libs/mustach 9999: C implementation of the mustache template library
 dev-libs/sds 2.0.0-r1: Simple Dynamic Strings
 dev-python/mkdocs-bootstrap386 0.0.1: A vintage 1980s DOS inspired Twitter Bootstrap theme for MkDocs
