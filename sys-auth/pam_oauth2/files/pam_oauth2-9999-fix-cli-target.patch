@@ -1,0 +1,26 @@
+From b7c1bcc78b3505d7cc89ff62b53009bea752bbd4 Mon Sep 17 00:00:00 2001
+From: Lucas Ramage <ramage.lucas@protonmail.com>
+Date: Fri, 13 Dec 2019 17:45:58 +0000
+Subject: [PATCH] Add -lm to cli target in Makefile
+
+Bug: https://github.com/quarxConnect/pam_oauth2/issues/2
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 9201bcd..79dc654 100644
+--- a/Makefile
++++ b/Makefile
+@@ -28,7 +28,7 @@ debug-syslog:	all
+ 
+ # Build CLI-Testprogramm to interface pam_oauth2 directly
+ cli:	pam_oauth2_core.o pam_oauth2_cli.o
+-	$(CC) $(LDFLAGS) $^ -lpam -lcurl -ljsonparser -o pam_oauth2
++	$(CC) $(LDFLAGS) $^ -lpam -lcurl -ljsonparser -lm -o pam_oauth2
+ 
+ # Build the actual pam-module
+ pam:	pam_oauth2_core.o pam_oauth2_pamlib.o
+-- 
+2.26.2
+
