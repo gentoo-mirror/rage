@@ -1,0 +1,13 @@
+BDEPEND=net-misc/curl >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DEPEND=net-misc/curl
+DESCRIPTION=OAuth2-Module for PAM
+EAPI=7
+HOMEPAGE=https://github.com/quarxConnect/pam_oauth2
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+PROPERTIES=live
+RDEPEND=net-misc/curl
+SLOT=0
+_eclasses_=eutils	fcb2aa98e1948b835b5ae66ca52868c5	git-r3	86a0188f2ad9eb3d65e4d031ab8a0422
+_md5_=2415ae0d68c9a97dc4bc96086eaba95e
