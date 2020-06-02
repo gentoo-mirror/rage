@@ -1,9 +1,9 @@
-# Rage <OxR463> Overlay
+# Rage <oxr463> Overlay
 
 ## Installation
 
 ```sh
-curl -L https://gitlab.com/oxr463/overlay/-/raw/master/.local/share/rage/scripts/install.sh | sh -
+curl -L https://gitlab.com/oxr463/overlay/-/raw/master/.local/share/rage/bin/install.sh | sh -
 ```
 
 **Note: this script requires elevated privileges in order to run.**

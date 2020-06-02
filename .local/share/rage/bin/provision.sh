@@ -32,4 +32,3 @@ emerge -nq --backtrack=1000 @rage-overlay
 # Set vi as default editor
 ln -s /bin/busybox /usr/local/bin/vi
 eselect editor set /usr/local/bin/vi
-

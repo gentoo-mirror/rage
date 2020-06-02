@@ -17,4 +17,3 @@ priority=9999
 EOF
 
 emerge --sync rage
-
