@@ -8,6 +8,7 @@ app-portage/portage-hooks 0.1: System of hooks for portage
 dev-libs/cjson 1.7.10: Ultralightweight JSON parser in ANSI C
 dev-libs/fyaml 0.5.7: Fully feature complete YAML parser and emitter
 dev-libs/json-parser 1.1.0: Very low footprint JSON parser written in portable ANSI C
+dev-libs/jwt 1.12.0: JWT C Library
 dev-libs/mustach 9999: C implementation of the mustache template library
 dev-libs/sds 2.0.0-r1: Simple Dynamic Strings
 dev-python/mkdocs-bootstrap386 0.0.1: A vintage 1980s DOS inspired Twitter Bootstrap theme for MkDocs
@@ -22,6 +23,8 @@ media-sound/gdigi 0.4.0: a tool aimed to provide X-Edit functionality to Linux u
 net-dns/opennic-up 0.92: OpenNIC auto DNS updater
 sys-apps/proot 5.1.0-r2: User-space implementation of chroot, mount --bind, and binfmt_misc
 sys-apps/quickstart 9999: An installer for Gentoo Linux written in POSIX shell
+sys-auth/libnss_aad 0.0.3: NSS Module for performing user lookups against the Azure Active Directory
+sys-auth/pam_aad 0.0.4: Azure Active Directory PAM Module
 sys-auth/pam_oauth2 9999: OAuth2-Module for PAM
 sys-kernel/dkms 2.4.0 2.6.1: Dynamic Kernel Module Support
 sys-kernel/kodiak-sources 4.6.6: Amazon Fire Phone Kernel Sources
