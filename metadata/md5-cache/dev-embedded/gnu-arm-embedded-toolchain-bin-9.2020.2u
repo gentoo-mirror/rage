@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Pre-built GNU toolchain for Arm Cortex-M and Cortex-R processors
+EAPI=7
+HOMEPAGE=https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm
+KEYWORDS=~amd64
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2
+_md5_=b3d72722629d0a576de3131034716453
