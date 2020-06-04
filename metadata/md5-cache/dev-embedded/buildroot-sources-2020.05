@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Easy-to-use tool to generate embedded Linux systems through cross-compilation
+EAPI=7
+HOMEPAGE=https://www.buildroot.org
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+SLOT=0
+SRC_URI=https://www.buildroot.org/downloads/buildroot-2020.05.tar.bz2
+_md5_=719749703f435a78c1c70d24e8dabea2
