@@ -7,6 +7,7 @@ app-misc/shellcat 1.2: A template processor, which uses shell script syntax
 app-portage/portage-hooks 0.1: System of hooks for portage
 dev-embedded/buildroot-sources 2020.05: Easy-to-use tool to generate embedded Linux systems through cross-compilation
 dev-embedded/gnu-arm-embedded-toolchain-bin 9.2020.2u: Pre-built GNU toolchain for Arm Cortex-M and Cortex-R processors
+dev-embedded/openwrt-sources 19.07.3: Buildsystem for the OpenWrt Linux distribution
 dev-libs/cjson 1.7.10: Ultralightweight JSON parser in ANSI C
 dev-libs/fyaml 0.5.7: Fully feature complete YAML parser and emitter
 dev-libs/json-parser 1.1.0: Very low footprint JSON parser written in portable ANSI C
