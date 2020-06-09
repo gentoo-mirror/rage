@@ -4,7 +4,7 @@
 
 dev-util/gse:ccache - Enables ccache support
 dev-util/gse:distcc - Enables distcc support
-sys-apps/proot:care - Build dynamic CARE binary (more info - https://proot-me.github.io)
+sys-apps/proot:care - Build dynamic CARE binary, (See: https://proot-me.github.io/care)
 sys-apps/quickstart:cifs - Use net-fs/cifs-utils
 sys-apps/quickstart:lvm - Use sys-fs/lvm2
 sys-apps/quickstart:nfs - Use net-fs/nfs-utils
