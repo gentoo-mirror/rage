@@ -27,8 +27,8 @@ dev-util/pmbootstrap 0.4.0 9999: Sophisticated chroot/build/flash tool to develo
 media-fonts/ocr-a 1.0: OCR-A font, conformant to ANSI X3.17-1977, in TrueType format, with sources
 media-sound/gdigi 0.4.0: a tool aimed to provide X-Edit functionality to Linux users
 net-dns/opennic-up 0.92: OpenNIC auto DNS updater
-sys-apps/proot 5.1.0-r2: User-space implementation of chroot, mount --bind, and binfmt_misc
-sys-apps/quickstart 9999: An installer for Gentoo Linux written in POSIX shell
+sys-apps/proot 5.1.0-r3: User-space implementation of chroot, mount --bind, and binfmt_misc
+sys-apps/quickstart 12.7.0: An installer for Gentoo Linux written in POSIX shell
 sys-auth/libnss_aad 0.0.3: NSS Module for performing user lookups against the Azure Active Directory
 sys-auth/pam_aad 0.0.4: Azure Active Directory PAM Module
 sys-auth/pam_oauth2 9999: OAuth2-Module for PAM
