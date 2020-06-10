@@ -7,14 +7,14 @@ if [[ ${PV} == "9999" ]] ; then
 
 inherit git-r3
 
-	EGIT_REPO_URI="https://github.com/oxr463/quickstart.git"
+	EGIT_REPO_URI="https://gitlab.com/oxr463/quickstart.git"
 else
-	SRC_URI="https://github.com/oxr463/quickstart/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64"
+	SRC_URI="https://gitlab.com/oxr463/quickstart/-/archive/v${PV}/quickstart-v${PV}.tar.bz2 -> ${P}.tar.bz2"
 fi
 
 DESCRIPTION="An installer for Gentoo Linux written in POSIX shell"
-HOMEPAGE="https://github.com/oxr463/quickstart"
+HOMEPAGE="https://gitlab.com/oxr463/quickstart"
+KEYWORDS="~amd64"
 
 LICENSE="GPL-2"
 SLOT="0"

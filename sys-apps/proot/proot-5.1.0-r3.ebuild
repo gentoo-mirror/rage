@@ -19,13 +19,18 @@ HOMEPAGE="https://proot-me.github.io"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="care static test"
+IUSE="care doc static test"
 
-RDEPEND="care? ( app-arch/libarchive:0= )
-	 sys-libs/talloc"
-DEPEND="${RDEPEND}
+RDEPEND="
+	care? ( app-arch/libarchive:0= )
+	sys-libs/talloc
+"
+DEPEND="
+	${RDEPEND}
 	care? ( dev-libs/uthash )
-	test? ( dev-util/valgrind )"
+	test? ( dev-util/valgrind )
+	doc? ( dev-libs/libxslt )
+"
 
 # Breaks sandbox
 RESTRICT="test"
