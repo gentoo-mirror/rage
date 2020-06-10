@@ -1,35 +1,10 @@
-image: alpine:3
-
-stages:
-  - test
-  - build
-
-before_script:
-    - apk update && apk add alpine-sdk bash git python py3-lxml py3-pip python3-dev rsync wget xz
-    - pip3 install pkgcheck pyyaml
-    - git clone https://anongit.gentoo.org/git/proj/portage.git
-    - cd portage && ./setup.py install
-    - cd repoman && ./setup.py install
-    - cd ../.. && rm -rf portage
-    - adduser -S portage && addgroup portage
-    - git clone https://gitlab.com/oxr463/gentoo.git /usr/portage
-    - mkdir -p /var/cache/distfiles
-    - eselect profile set default/linux/amd64/17.1
-    - git clone https://gitlab.com/oxr463/ebuildbot.git /opt/ebuildbot
-    - chmod +x /opt/ebuildbot/scripts/build.sh
-
-repoman:
-  stage: test
-  script:
-    - PORTDIR='/usr/portage' ARCH=x86_64 ACCEPT_KEYWORDS='' repoman -dxi full
-
-pkgcheck:
-  stage: test
-  script:
-    - pkgcheck scan --commits
+services:
+  - docker:dind
 
 build:
-  stage: build
+  image: docker:latest
+  before_script:
+    - apk update
+    - apk add docker-compose
   script:
-    - /opt/ebuildbot/scripts/build.sh
-
+    - docker-compose --project-directory . -f .local/share/rage/docker-compose.yml build

@@ -1,0 +1,10 @@
+version: "3"
+services:
+  rage-overlay:
+    image: oxr463/overlay
+    build:
+      context: .
+      dockerfile: .local/share/rage/Dockerfile
+    volumes:
+      - .:/var/db/repos/rage
+      - .local/etc:/etc

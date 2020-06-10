@@ -4,8 +4,7 @@ FROM gentoo/stage3-amd64:latest
 
 COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
 
-RUN mkdir -p /usr/local/share
+WORKDIR /var/db/repos/rage
+COPY . /var/db/repos/rage
 
-COPY .local/share /usr/local/share
-
-RUN /bin/sh /usr/local/share/rage/bin/provision.sh
+RUN /bin/sh .local/share/rage/bin/provision.sh

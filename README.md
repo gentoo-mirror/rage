@@ -11,7 +11,7 @@ curl -L https://gitlab.com/oxr463/overlay/-/raw/master/.local/share/rage/bin/ins
 ### Docker
 
 ```sh
-docker build -f .local/share/rage/Dockerfile -t oxr463/overlay .
+docker-compose --project-directory . -f .local/share/rage/docker-compose.yml build
 ```
 
 ### Vagrant

@@ -1,0 +1,4 @@
+# test dependencies for rage overlay
+app-portage/repoman
+dev-util/pkgcheck
+dev-vcs/git

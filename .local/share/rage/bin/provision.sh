@@ -2,32 +2,15 @@
 # Provision rage overlay for testing
 set -eu
 
+OVERLAY_DIR="/var/db/repos/rage"
+
+# Copy portage configuration
+cp -R "${OVERLAY_DIR}"/.local/etc/portage/* /etc/portage/
+
 # Set keywords
-cat << EOF > /etc/portage/package.accept_keywords
-sys-apps/pkgcore ~amd64
-dev-util/pkgcheck ~amd64
-EOF
+echo 'ACCEPT_KEYWORDS="~amd64"' >> /etc/portage/make.conf
 
-# Unmask dependencies
-cat << EOF > /etc/portage/package.unmask
-<sys-devel/gcc-5.4
-<sys-libs/glibc-2.30-r8
-<sys-devel/binutils-2.33.1-r1
-<sys-libs/binutils-libs-2.33.1-r1
-EOF
-
-# Create dependency set
-mkdir -p /etc/portage/sets
-
-cat << EOF > /etc/portage/sets/rage-overlay
-# test dependencies for rage overlay
-app-portage/repoman
-dev-util/pkgcheck
-dev-vcs/git
-net-fs/sshfs
-EOF
-
-emerge -nq --backtrack=1000 @rage-overlay
+emerge -nq @rage-overlay-dependencies
 
 # Set vi as default editor
 ln -s /bin/busybox /usr/local/bin/vi
