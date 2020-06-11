@@ -1,6 +1,8 @@
 services:
   - docker:dind
 
+image: registry.gitlab.com/oxr463/overlay:latest
+
 registry:
   type: build
   image: docker:latest
@@ -18,9 +20,9 @@ pkgcheck:
   before_script:
     - mkdir eclass
   script:
-    - docker run -v $(pwd):/var/db/repos/rage oxr463/overlay /bin/bash -c "pkgcheck scan --commits"
+    - pkgcheck scan --commits
 
 repoman:
   type: test
   script:
-    - docker run -v $(pwd):/var/db/repos/rage oxr463/overlay /bin/bash -c "repoman -dxi full"
+    - repoman -dxi full
