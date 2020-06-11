@@ -10,6 +10,9 @@ cp -R "${OVERLAY_DIR}"/.local/etc/portage/* /etc/portage/
 # Set keywords
 echo 'ACCEPT_KEYWORDS="~amd64"' >> /etc/portage/make.conf
 
+# Enable binary packages
+echo 'FEATURES="buildpkg"' >> /etc/portage/make.conf
+
 emerge -nq @rage-overlay-dependencies
 
 # Set vi as default editor
