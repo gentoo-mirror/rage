@@ -1,4 +1,4 @@
-# Rage <oxr463> Overlay
+# Portage - Rage Overlay
 
 ## Installation
 
