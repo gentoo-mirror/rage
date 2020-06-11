@@ -21,6 +21,7 @@ pkgcheck:
     - mkdir eclass
   script:
     - pkgcheck scan --commits
+  allow_failure: true
 
 repoman:
   type: test
