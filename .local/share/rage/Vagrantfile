@@ -1,9 +1,17 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "generic/gentoo"
 
-  config.vm.provision "shell", path: "./bin/provision.sh"
-  config.vm.provision "shell", path: "./bin/install.sh"
+  # Disable default synced directory
+  config.vm.synced_folder ".", "/vagrant", disabled: true
 
-  # config.vm.synced_folder ".", "/var/db/portage/rage", type: "sshfs", reverse: false
+  # Synchronize repository directory
+  config.vm.synced_folder "../../..", "/var/db/repos/rage"
+
+  config.vm.provision "shell",
+    inline: "/bin/sh /var/db/repos/rage/.local/share/rage/bin/provision.sh"
+
+  # Enable rage overlay
+  config.vm.provision "shell",
+    path: "https://gitlab.com/oxr463/overlay/-/raw/master/.local/share/rage/bin/install.sh"
 
 end
