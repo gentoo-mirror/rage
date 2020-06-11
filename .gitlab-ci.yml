@@ -1,10 +1,15 @@
 services:
   - docker:dind
 
-build:
+registry:
+  type: build
   image: docker:latest
   before_script:
     - apk update
     - apk add docker-compose
   script:
+    - echo "${CI_REGISTRY_PASSWORD}" | docker login -u "${CI_REGISTRY_USER}" --password-stdin "${CI_REGISTRY}"
     - docker-compose --project-directory . -f .local/share/rage/docker-compose.yml build
+    - docker tag "${CI_PROJECT_PATH}" "${CI_REGISTRY}/${CI_PROJECT_PATH}"
+    - docker push "${CI_REGISTRY}/${CI_PROJECT_PATH}"
+
