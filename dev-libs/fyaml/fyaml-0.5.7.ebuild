@@ -23,4 +23,3 @@ src_prepare() {
 	default
 	./bootstrap.sh || die "Failed to bootstrap configure files"
 }
-

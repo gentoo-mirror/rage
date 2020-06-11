@@ -6,8 +6,8 @@ EAPI=7
 _PN="openwrt-sdk"
 _P="${_PN}-${PV}"
 
-DESCRIPTION=""
-HOMEPAGE=""
+DESCRIPTION="Pre-compiled toolchain designed for cross-compiling OpenWrt packages"
+HOMEPAGE="https://openwrt.org/docs/guide-developer/using_the_sdk"
 SRC_URI="https://downloads.openwrt.org/releases/${PV}/targets/x86/64/${_P}-x86-64_gcc-7.5.0_musl.Linux-x86_64.tar.xz"
 LICENSE="GPL-2"
 

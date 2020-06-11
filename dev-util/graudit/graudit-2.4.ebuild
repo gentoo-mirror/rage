@@ -13,7 +13,7 @@ KEYWORDS="~amd64"
 IUSE=""
 DOCS=( ${PN}.1 ${PN}.7 Changelog README.md )
 
-RDEPEND="app-shells/bash"
+RDEPEND="app-shells/bash:="
 DEPEND="${RDEPEND}"
 
 src_prepare() {

@@ -15,7 +15,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="ncurses wxwidgets"
 
 RDEPEND="dev-python/pyserial
-	wxwidgets? ( dev-python/wxpython )"
+	wxwidgets? ( dev-python/wxpython:= )"
 
 DEPEND="ncurses? ( sys-libs/ncurses:* )
 	${RDEPEND}"

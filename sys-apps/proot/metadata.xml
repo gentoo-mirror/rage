@@ -14,7 +14,7 @@
 	through QEMU user-mode.
 	</longdescription>
 	<upstream>
-	    <bugs-to>https://github.com/proot-me/proot/issues</bugs-to>
+		<bugs-to>https://github.com/proot-me/proot/issues</bugs-to>
 		<changelog>https://raw.githubusercontent.com/proot-me/proot/master/CHANGELOG.rst</changelog>
 		<remote-id type="github">proot-me/proot</remote-id>
 	</upstream>

@@ -11,7 +11,7 @@ if [[ ${PV} == "9999" ]]; then
 	EXPERIMENTAL="true"
 else
 	SRC_URI="https://gitlab.com/oxr463/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.gz"
-	KEYWORDS="~amd64 ~x86 ~x86-fbsd"
+	KEYWORDS="~amd64 ~x86"
 fi
 
 DESCRIPTION="eXtended Window Manager is based on dwm-plus, a fork of dwm."

@@ -6,8 +6,8 @@ EAPI=7
 _PN="openwrt-imagebuilder"
 _P="${_PN}-${PV}"
 
-DESCRIPTION=""
-HOMEPAGE=""
+DESCRIPTION="Pre-compiled environment suitable for creating custom images"
+HOMEPAGE="https://openwrt.org/docs/guide-user/additional-software/imagebuilder"
 SRC_URI="https://downloads.openwrt.org/releases/${PV}/targets/x86/64/${_P}-x86-64.Linux-x86_64.tar.xz"
 LICENSE="GPL-2"
 
