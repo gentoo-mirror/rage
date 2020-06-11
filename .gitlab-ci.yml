@@ -13,3 +13,12 @@ registry:
     - docker tag "${CI_PROJECT_PATH}" "${CI_REGISTRY}/${CI_PROJECT_PATH}"
     - docker push "${CI_REGISTRY}/${CI_PROJECT_PATH}"
 
+pkgcheck:
+  type: test
+  script:
+    - docker run -v $(pwd):/var/db/repos/rage oxr463/overlay /bin/bash -c "pkgcheck scan --commits"
+
+repoman:
+  type: test
+  script:
+    - docker run -v $(pwd):/var/db/repos/rage oxr463/overlay /bin/bash -c "repoman -dxi full"
