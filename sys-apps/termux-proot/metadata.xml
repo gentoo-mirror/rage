@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>ramage.lucas@protonmail.com</email>
+		<name>Lucas Ramage</name>
+	</maintainer>
+	<upstream>
+		<bugs-to>https://github.com/termux/proot/issues</bugs-to>
+		<remote-id type="github">termux/proot</remote-id>
+	</upstream>
+</pkgmetadata>
