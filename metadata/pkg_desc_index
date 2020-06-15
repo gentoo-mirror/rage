@@ -35,5 +35,4 @@ sys-auth/libnss_aad 0.0.3: NSS Module for performing user lookups against the Az
 sys-auth/pam_aad 0.0.4: Azure Active Directory PAM Module
 sys-auth/pam_oauth2 9999: OAuth2-Module for PAM
 sys-kernel/dkms 2.4.0 2.6.1: Dynamic Kernel Module Support
-sys-kernel/kodiak-sources 4.6.6: Amazon Fire Phone Kernel Sources
 x11-wm/xwm 0.2: eXtended Window Manager is based on dwm-plus, a fork of dwm.

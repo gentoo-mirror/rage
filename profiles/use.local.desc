@@ -11,6 +11,3 @@ sys-apps/quickstart:nfs - Use net-fs/nfs-utils
 sys-apps/quickstart:raid - Use sys-fs/mdadm
 sys-apps/quickstart:samba - Use net-fs/samba
 sys-apps/quickstart:uefi - Use sys-fs/dosfstools
-sys-kernel/kodiak-sources:binary - Builds and installs kernel automatically
-sys-kernel/kodiak-sources:kexec - Enables CONFIG_KEXEC support in the kernel
-sys-kernel/kodiak-sources:otg - Enables CONFIG_USB_OTG support in the kernel
