@@ -7,4 +7,4 @@ LICENSE=android
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://dl.google.com/android/repository/commandlinetools-linux-6514223_latest.zip -> android-studio-tools-bin-9999.zip
-_md5_=7d580c409f236afcf4b906bd13a3b913
+_md5_=f6c3566e78678d578f228e4d5874082e
