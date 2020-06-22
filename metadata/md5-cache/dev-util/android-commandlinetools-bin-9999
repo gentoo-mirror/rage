@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile config install
+DEPEND=dev-util/android-commandlinetools-bin
+DESCRIPTION=Command line tools for Android
+EAPI=7
+HOMEPAGE=https://developer.android.com
+KEYWORDS=~amd64
+LICENSE=android
+SLOT=0
+SRC_URI=https://dl.google.com/android/repository/commandlinetools-linux-6514223_latest.zip -> android-commandlinetools-bin-9999.zip
+_eclasses_=android	f43b5a95b1109aa7eabca8bb835bda43
+_md5_=7217337e8f4b5a50499e402774fe0277
