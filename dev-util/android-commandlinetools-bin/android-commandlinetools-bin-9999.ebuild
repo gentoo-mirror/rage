@@ -3,28 +3,32 @@
 
 EAPI=7
 
+inherit android
+
 _PV="6514223"
 
-DESCRIPTION="Command line tools for Android Studio"
-HOMEPAGE="https://developer.android.com/studio"
+DESCRIPTION="Command line tools for Android"
+HOMEPAGE="https://developer.android.com"
 SRC_URI="https://dl.google.com/android/repository/commandlinetools-linux-${_PV}_latest.zip -> ${P}.zip"
 LICENSE="android"
 
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
-RESTRICT="mirror"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
 S="${WORKDIR}/tools"
 
-ANDROID_STUDIO_HOME="/opt/${PN}"
+_D="${ANDROID_HOME}/cmdline-tools/tools"
 QA_PREBUILT="opt/${PN}/*"
 
 src_install() {
-	local TOOLS_DIR="${ANDROID_STUDIO_HOME}/tools"
+	dodir ${_D%/*}
+	mv "${S}" "${ED%/}"${_D} || die
+}
 
-	dodir ${TOOLS_DIR%/*}
-	mv "${S}" "${ED%/}"${TOOLS_DIR} || die
+pkg_config() {
+	# automatically accept licenses
+	echo y | "${_D}/bin/sdkmanager"
 }

@@ -17,8 +17,6 @@ registry:
 
 pkgcheck:
   type: test
-  before_script:
-    - mkdir eclass
   script:
     - pkgcheck scan --commits
   allow_failure: true
