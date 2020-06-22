@@ -20,6 +20,7 @@ dev-python/mkdocs-bootstrap386 0.0.1: A vintage 1980s DOS inspired Twitter Boots
 dev-python/pydocstyle 2.0.0: Static analysis tool for checking compliance with Python docstring conventions
 dev-python/pylama 7.4.3: Code audit tool for Python and JavaScript
 dev-python/pyobd 0.9.3: OBD-II compliant car diagnostic tool.
+dev-util/android-studio-tools-bin 9999: Command line tools for Android Studio
 dev-util/graudit 2.4: Grep rough audit - source code auditing tool
 dev-util/gse 9999: Gentoo Stateless Environment
 dev-util/mkbootimg 2018.10.27: Android bootimg creation tool

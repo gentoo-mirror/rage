@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=Command line tools for Android Studio
+EAPI=7
+HOMEPAGE=https://developer.android.com/studio
+KEYWORDS=~amd64
+LICENSE=android
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://dl.google.com/android/repository/commandlinetools-linux-6514223_latest.zip -> android-studio-tools-bin-9999.zip
+_md5_=7d580c409f236afcf4b906bd13a3b913
