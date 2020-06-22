@@ -19,11 +19,12 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 S="${WORKDIR}/tools"
 
+ANDROID_STUDIO_HOME="/opt/${PN}"
 QA_PREBUILT="opt/${PN}/*"
 
 src_install() {
-	ANDROID_STUDIO_HOME="/opt/${PN}"
+	local TOOLS_DIR="${ANDROID_STUDIO_HOME}/tools"
 
-	dodir ${ANDROID_STUDIO_HOME%/*}
-	mv "${S}" "${ED%/}"${ANDROID_STUDIO_HOME} || die
+	dodir ${TOOLS_DIR%/*}
+	mv "${S}" "${ED%/}"${TOOLS_DIR} || die
 }
