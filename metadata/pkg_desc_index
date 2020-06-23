@@ -1,4 +1,4 @@
-android-terms/termux 0.95: 
+android-terms/termux 0.95: Android terminal and Linux environment
 app-admin/lsat 0.9.8.2: The Linux Security Auditing Tool
 app-benchmarks/gcc-perf 9999: Test ARM/X86 C/SIMD/ASM perf
 app-benchmarks/phoronix-test-suite 7.8.0 8.0.1 8.2.0 8.4.0 8.4.1: Phoronix's comprehensive, cross-platform testing and benchmark suite
@@ -24,7 +24,7 @@ dev-python/pydocstyle 2.0.0: Static analysis tool for checking compliance with P
 dev-python/pylama 7.4.3: Code audit tool for Python and JavaScript
 dev-python/pyobd 0.9.3: OBD-II compliant car diagnostic tool.
 dev-util/android-commandlinetools-bin 9999: Command line tools for Android
-dev-util/android-ndk 21: Open Handset Alliance's Android NDK (Native Dev Kit)
+dev-util/android-ndk 21d: Open Handset Alliance's Android NDK (Native Dev Kit)
 dev-util/graudit 2.4: Grep rough audit - source code auditing tool
 dev-util/gse 9999: Gentoo Stateless Environment
 dev-util/mkbootimg 2018.10.27: Android bootimg creation tool
