@@ -36,5 +36,5 @@ sys-apps/termux-proot 9999: An chroot-like implementation using ptrace
 sys-auth/libnss_aad 0.0.3: NSS Module for performing user lookups against the Azure Active Directory
 sys-auth/pam_aad 0.0.4: Azure Active Directory PAM Module
 sys-auth/pam_oauth2 9999: OAuth2-Module for PAM
-sys-kernel/dkms 2.4.0 2.6.1: Dynamic Kernel Module Support
+sys-kernel/dkms 2.8.2: Dynamic Kernel Module Support
 x11-wm/xwm 0.2: eXtended Window Manager is based on dwm-plus, a fork of dwm.
