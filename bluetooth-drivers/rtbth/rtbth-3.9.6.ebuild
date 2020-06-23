@@ -12,9 +12,10 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="dkms"
 
-DEPEND="
+BDEPEND="
 	dkms? ( sys-kernel/dkms )
 	virtual/linux-sources
 	virtual/modutils
 "
+DEPEND=""
 RDEPEND="${DEPEND}"
