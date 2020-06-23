@@ -6,6 +6,6 @@
 		<description>Lucas Ramage</description>		
 	</maintainer>
 	<upstream>
-		<remote-id type="gitlab">lramage94/mkdocs-bootstrap386</remote-id>
+		<remote-id type="gitlab">lramage/mkdocs-bootstrap386</remote-id>
 	</upstream>
 </pkgmetadata>
