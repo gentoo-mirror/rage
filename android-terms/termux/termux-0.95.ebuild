@@ -18,6 +18,7 @@ DEPEND="
 	dev-java/gradle-bin
 "
 RDEPEND="${DEPEND}"
+S="${WORKDIR}/${PN}-app-${PV}"
 
 src_compile() {
 	./gradlew assembleDebug || die
