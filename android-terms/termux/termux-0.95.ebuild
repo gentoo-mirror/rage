@@ -3,18 +3,22 @@
 
 EAPI=7
 
-EGIT_REPO_URI=""
-EGIT_COMMIT=""
+inherit android
 
-inherit eutils git-r3
-
-DESCRIPTION="This is a sample skeleton ebuild file"
-HOMEPAGE="https://foo.example.org/"
-LICENSE=""
+DESCRIPTION=""
+HOMEPAGE=""
+SRC_URI="https://github.com/termux/termux-app/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+LICENSE="Apache-2.0 GPL-3"
 
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~arm64"
 IUSE=""
 
-DEPEND=""
+DEPEND="
+	dev-java/gradle-bin
+"
 RDEPEND="${DEPEND}"
+
+src_compile() {
+	./gradlew assembleDebug || die
+}

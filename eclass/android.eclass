@@ -12,8 +12,7 @@
 # A simple eclass to build Android packages using the sdk.
 
 case "${EAPI:-0}" in
-	7)
-		EXPORT_FUNCTIONS src_compile;;
+	7) ;;
 	*)
 		die "EAPI ${EAPI} is not supported, contact eclass maintainers";;
 esac
@@ -21,6 +20,10 @@ esac
 DEPEND="
 	dev-util/android-commandlinetools-bin
 "
+
+QA_FLAGS_IGNORED='.*'
+
+RESTRICT="strip"
 
 # https://developer.android.com/studio/command-line/variables
 
@@ -33,28 +36,6 @@ DEPEND="
 # @DESCRIPTION:
 # Also points to the SDK installation directory; deprecated in favor of the former.
 : ${ANDROID_HOME:="${ANDROID_SDK_ROOT}"}
-
-# @FUNCTION: android-configure
-# @USAGE: [additional-args]
-# @DESCRIPTION:
-# Passes all arguments through to the appropriate "android configure"
-# command.
-android-configure() { :; }
-
-# @FUNCTION: android-build
-# @USAGE: [additional-args]
-# @DESCRIPTION:
-# First builds all dependencies, and then passes through its arguments
-# to the appropriate "android build" command.
-android-build() { :; }
-
-# @FUNCTION: android-src_compile
-# @DESCRIPTION:
-# Calls android-configure() and android-build() to compile an android project.
-android_src_compile() {
-	android-configure || die "configure failed"
-	android-build || die "build failed"
-}
 
 # @FUNCTION: doapk
 # @USAGE: <apk-file>

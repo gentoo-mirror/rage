@@ -6,6 +6,6 @@
 		<description>Lucas Ramage</description>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">antirez/sds</remote-id>
+		<remote-id type="github">termux/termux-app</remote-id>
 	</upstream>
 </pkgmetadata>
