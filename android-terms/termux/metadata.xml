@@ -8,4 +8,7 @@
 	<upstream>
 		<remote-id type="github">termux/termux-app</remote-id>
 	</upstream>
+	<use>
+		<flag name="android">Install apk on Android devices</flag>
+	</use>
 </pkgmetadata>
