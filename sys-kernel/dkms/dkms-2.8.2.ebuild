@@ -1,19 +1,24 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI=7
 
-EGIT_REPO_URI="https://github.com/dell/dkms"
-EGIT_COMMIT=8c3065c6b26d573d55abfcb17b422204ba63e590
-
-inherit eutils git-r3
+inherit eutils
 
 DESCRIPTION="Dynamic Kernel Module Support"
 HOMEPAGE="https://github.com/dell/dkms"
+SRC_URI="https://github.com/dell/dkms/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-2"
+
 DEPEND=""
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
+
+src_prepare() {
+	default
+
+	sed -i 's|all:.*|all: clean tarball|g' Makefile
+}
 
 src_install () {
 	sed -i "s:prepare-all:prepare:g" ./dkms || die
