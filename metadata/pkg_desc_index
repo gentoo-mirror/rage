@@ -6,11 +6,13 @@ app-doc/sei-cert-c-coding-standard 01: SEI CERT C Coding Standard
 app-misc/bug 1.1: Simple Bug / ToDo tracker for the command line
 app-misc/shellcat 1.2: A template processor, which uses shell script syntax
 app-portage/portage-hooks 0.1: System of hooks for portage
+bluetooth-drivers/rtbth 3.9.6: Linux kernel module for a Ralink RT3290
 dev-embedded/buildroot-sources 2020.05: Easy-to-use tool to generate embedded Linux systems through cross-compilation
 dev-embedded/gnu-arm-embedded-toolchain-bin 9.2020.2u: Pre-built GNU toolchain for Arm Cortex-M and Cortex-R processors
 dev-embedded/openwrt-imagebuilder-bin 19.07.3: Pre-compiled environment suitable for creating custom images
 dev-embedded/openwrt-sdk-bin 19.07.3: Pre-compiled toolchain designed for cross-compiling OpenWrt packages
 dev-embedded/openwrt-sources 19.07.3: Buildsystem for the OpenWrt Linux distribution
+dev-java/gradle-bin 6.2.2: A project automation and build tool with a Groovy based DSL
 dev-libs/cjson 1.7.10: Ultralightweight JSON parser in ANSI C
 dev-libs/fyaml 0.5.7: Fully feature complete YAML parser and emitter
 dev-libs/json-parser 1.1.0: Very low footprint JSON parser written in portable ANSI C
@@ -22,6 +24,7 @@ dev-python/pydocstyle 2.0.0: Static analysis tool for checking compliance with P
 dev-python/pylama 7.4.3: Code audit tool for Python and JavaScript
 dev-python/pyobd 0.9.3: OBD-II compliant car diagnostic tool.
 dev-util/android-commandlinetools-bin 9999: Command line tools for Android
+dev-util/android-ndk 21: Open Handset Alliance's Android NDK (Native Dev Kit)
 dev-util/graudit 2.4: Grep rough audit - source code auditing tool
 dev-util/gse 9999: Gentoo Stateless Environment
 dev-util/mkbootimg 2018.10.27: Android bootimg creation tool

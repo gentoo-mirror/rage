@@ -8,4 +8,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=https://github.com/termux/termux-app/archive/v0.95.tar.gz -> termux-0.95.tar.gz
 _eclasses_=android	aab0c215d0da9ee873d212babe097a3e
-_md5_=58cb9cfcfe4b6f22dfb84a342b4fc9ff
+_md5_=30e53563e12eda9570d661fdf9dcaeec

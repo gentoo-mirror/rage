@@ -2,6 +2,7 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+bluetooth-drivers/rtbth:dkms - Enables dkms support
 dev-util/gse:ccache - Enables ccache support
 dev-util/gse:distcc - Enables distcc support
 sys-apps/proot:care - Build dynamic CARE binary, (See: https://proot-me.github.io/care)
