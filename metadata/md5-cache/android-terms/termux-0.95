@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile
+DEPEND=dev-java/gradle-bin dev-util/android-commandlinetools-bin
+EAPI=7
+KEYWORDS=~arm64
+LICENSE=Apache-2.0 GPL-3
+RDEPEND=dev-java/gradle-bin
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/termux/termux-app/archive/v0.95.tar.gz -> termux-0.95.tar.gz
+_eclasses_=android	aab0c215d0da9ee873d212babe097a3e
+_md5_=58cb9cfcfe4b6f22dfb84a342b4fc9ff
