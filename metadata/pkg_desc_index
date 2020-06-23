@@ -19,10 +19,9 @@ dev-libs/json-parser 1.1.0: Very low footprint JSON parser written in portable A
 dev-libs/jwt 1.12.0: JWT C Library
 dev-libs/mustach 9999: C implementation of the mustache template library
 dev-libs/sds 2.0.0-r1: Simple Dynamic Strings
-dev-python/mkdocs-bootstrap386 0.0.1: A vintage 1980s DOS inspired Twitter Bootstrap theme for MkDocs
+dev-python/mkdocs-bootstrap386 0.0.2: A vintage 1980s DOS inspired Twitter Bootstrap theme for MkDocs
 dev-python/pydocstyle 2.0.0: Static analysis tool for checking compliance with Python docstring conventions
 dev-python/pylama 7.4.3: Code audit tool for Python and JavaScript
-dev-python/pyobd 0.9.3: OBD-II compliant car diagnostic tool.
 dev-util/android-commandlinetools-bin 9999: Command line tools for Android
 dev-util/android-ndk 21d: Open Handset Alliance's Android NDK (Native Dev Kit)
 dev-util/graudit 2.4: Grep rough audit - source code auditing tool
