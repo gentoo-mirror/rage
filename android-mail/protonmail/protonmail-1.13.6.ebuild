@@ -15,18 +15,17 @@ KEYWORDS="~arm64"
 IUSE="android"
 
 BDEPEND="
-	~dev-java/gradle-bin-6.2.2
-	~dev-util/android-ndk-21d
+	~dev-java/gradle-bin-6.3
 	|| ( dev-util/android-commandlinetools-bin dev-util/android-studio )
 "
 DEPEND=""
 RDEPEND="${DEPEND}"
-S="${WORKDIR}/${PN}-app-${PV}"
+S="${WORKDIR}/proton-mail-android-${PV}"
 
 src_compile() {
-	gradle --no-daemon assembleRelease
+	gradle --no-daemon assembleBetaDebug
 }
 
 src_install() {
-	doapk app/build/outputs/apk/release/app-release-unsigned.apk
+	doapk "app/build/outputs/apk/beta/debug/ProtonMail-Android-${PV}-beta-debug.apk"
 }
