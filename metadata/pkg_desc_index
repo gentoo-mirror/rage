@@ -13,7 +13,7 @@ dev-embedded/gnu-arm-embedded-toolchain-bin 9.2020.2u: Pre-built GNU toolchain f
 dev-embedded/openwrt-imagebuilder-bin 19.07.3: Pre-compiled environment suitable for creating custom images
 dev-embedded/openwrt-sdk-bin 19.07.3: Pre-compiled toolchain designed for cross-compiling OpenWrt packages
 dev-embedded/openwrt-sources 19.07.3: Buildsystem for the OpenWrt Linux distribution
-dev-java/gradle-bin 6.2.2: A project automation and build tool with a Groovy based DSL
+dev-java/gradle-bin 6.2.2 6.3: A project automation and build tool with a Groovy based DSL
 dev-libs/cjson 1.7.10: Ultralightweight JSON parser in ANSI C
 dev-libs/fyaml 0.5.7: Fully feature complete YAML parser and emitter
 dev-libs/json-parser 1.1.0: Very low footprint JSON parser written in portable ANSI C
