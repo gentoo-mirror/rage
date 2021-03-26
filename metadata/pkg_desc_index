@@ -27,7 +27,6 @@ dev-util/graudit 2.4: Grep rough audit - source code auditing tool
 dev-util/gse 9999: Gentoo Stateless Environment
 dev-util/mkbootimg 2018.10.27: Android bootimg creation tool
 dev-util/pmbootstrap 0.4.0 9999: Sophisticated chroot/build/flash tool to develop and install postmarketOS.
-media-fonts/ocr-a 1.0: OCR-A font, conformant to ANSI X3.17-1977, in TrueType format, with sources
 media-sound/gdigi 0.4.0: a tool aimed to provide X-Edit functionality to Linux users
 net-dns/opennic-up 0.97: OpenNIC auto DNS updater
 net-fs/gitfs 0.5.2: Version controlled file system
