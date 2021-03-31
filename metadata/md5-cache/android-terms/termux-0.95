@@ -4,6 +4,7 @@ DEPEND=dev-util/android-commandlinetools-bin
 DESCRIPTION=Android terminal and Linux environment
 EAPI=7
 HOMEPAGE=https://termux.com
+INHERIT=android
 IUSE=android
 KEYWORDS=~arm64
 LICENSE=Apache-2.0 GPL-3

@@ -3,6 +3,7 @@ DEPEND=dev-util/android-commandlinetools-bin
 DESCRIPTION=Command line tools for Android
 EAPI=7
 HOMEPAGE=https://developer.android.com
+INHERIT=android
 KEYWORDS=~amd64
 LICENSE=android
 RESTRICT=strip
