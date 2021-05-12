@@ -2,11 +2,20 @@
 
 ## Installation
 
+### Script way
+
 ```sh
 curl -L https://gitlab.com/oxr463/overlay/-/raw/master/.local/share/rage/bin/install.sh | sh -
 ```
 
 **Note: this script requires elevated privileges in order to run.**
+
+### Eselect way
+
+```sh
+sudo eselect repository add rage git https://gitlab.com/oxr463/overlay.git
+emerge --sync rage
+```
 
 ### Docker
 
